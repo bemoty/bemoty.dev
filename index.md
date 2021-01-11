@@ -5,5 +5,6 @@ i'm a software developer at [gommehd.net](https://gommehd.net/) and moderating m
 ## 🌐 follow me on my socials
 
 - [twitter](https://twitter.com/@bemoty)
-- [youtube](https://youtube.com/)
+- [youtube](https://www.youtube.com/channel/UC82W5PsCi5IJSnWDsTdxLpw)
+- [instagram](https://instagram.com/joshoty/)
 - [github](https://github.com/bemoty)
