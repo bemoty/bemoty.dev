@@ -5,7 +5,6 @@ i'm an austrian software engineer @ [gommehd.net](https://gommehd.net/) developi
 ### 📧 reach out to me
 
 use `bemoty@gommehd.net` or `bemoty@protonmail.com` to get in touch with me.
-
 ### 🌐 follow me on my socials
 
 - [Twitter](https://twitter.com/bemoty)
