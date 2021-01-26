@@ -1,0 +1,30 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: 🌐 my socials
+    entries:
+      - title: Twitter
+        url: https://twitter.com/bemoty
+      - title: GitHub
+        url: https://github.com/bemoty
+      - title: YouTube
+        url: https://youtube.com/bemoty
+      - title: Instagram
+        url: https://instagram.com/joshoty
+
+  - title: 🔑 pgp public key
+    entries:
+     - title: 3151 98E7 FAF8 F8B5 C424  B5FD 78D7 D488 54FA 7AB0
+     - title: ... or download it
+       url: https://bemoty.dev/public.pgp
+
+#  - title: all posts
+#    post_list:
+#      limit: 5
+#      show_more: true
+#      show_more_text: See archive...
+#      show_more_url: archive.html
+
+#  - title: rss
+#    url: feed.xml
