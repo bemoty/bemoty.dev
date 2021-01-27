@@ -4,13 +4,13 @@
 entries:
   - title: <span class="emoji">🌐</span> my socials
     entries:
-      - title: Twitter
+      - title: twitter
         url: https://twitter.com/bemoty
-      - title: GitHub
+      - title: github
         url: https://github.com/bemoty
-      - title: YouTube
+      - title: youtube
         url: https://youtube.com/bemoty
-      - title: Instagram
+      - title: instagram
         url: https://instagram.com/joshoty
 
   - title: <span class="emoji">🔑</span> pgp public key
@@ -27,5 +27,7 @@ entries:
       show_more_text: See archive...
       show_more_url: archive.html
 
-#  - title: rss
-#    url: feed.xml
+  - title: <span class="emoji">📻</span> rss
+    entries:
+      - title: feed.xml
+        url: feed.xml
