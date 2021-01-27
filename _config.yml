@@ -6,7 +6,7 @@ baseurl: "" # subpath of the site, e.g. "/blog"
 description: > # description of the site (multiple lines allowed)
   bemoty is a software engineer from austria
 
-permalink: /:slug
+permalink: /blog/:slug
 
 favicon: "favicon.ico"
 # goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
