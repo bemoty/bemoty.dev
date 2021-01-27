@@ -1,7 +1,7 @@
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
   filter: invert(1);
-  img, .emoji {
+  img, .emoji, .highlight, pre, code, .highlight-rogue {
     filter: invert(1);
 
     &.ioda { filter: invert(0); }
@@ -64,11 +64,6 @@ table, th, td {
   border: thin solid black;
   border-collapse: collapse;
   padding: 0.4rem;
-}
-
-code {
-  color: white;
-  background: black;
 }
 
 div.highlighter-rouge code {

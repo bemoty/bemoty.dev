@@ -6,10 +6,10 @@ baseurl: "" # subpath of the site, e.g. "/blog"
 description: > # description of the site (multiple lines allowed)
   bemoty is a software engineer from austria
 
-permalink: /blog/:slug
+highlighter: rouge
+permalink: /:slug
 
 favicon: "favicon.ico"
-# goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
 
 remote_theme: riggraz/no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
 
