@@ -1,7 +1,7 @@
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
   filter: invert(1);
-  img {
+  img, .emoji {
     filter: invert(1);
 
     &.ioda { filter: invert(0); }

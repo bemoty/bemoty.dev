@@ -2,7 +2,7 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: 🌐 my socials
+  - title: <span class="emoji">🌐</span> my socials
     entries:
       - title: Twitter
         url: https://twitter.com/bemoty
@@ -13,18 +13,19 @@ entries:
       - title: Instagram
         url: https://instagram.com/joshoty
 
-  - title: 🔑 pgp public key
+  - title: <span class="emoji">🔑</span> pgp public key
     entries:
      - title: 3151 98E7 FAF8 F8B5 C424  B5FD 78D7 D488 54FA 7AB0
      - title: ... or download it
        url: https://bemoty.dev/public.pgp
+  
 
-#  - title: all posts
-#    post_list:
-#      limit: 5
-#      show_more: true
-#      show_more_text: See archive...
-#      show_more_url: archive.html
+  - title: all posts
+    post_list:
+      limit: 5
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
 
 #  - title: rss
 #    url: feed.xml
