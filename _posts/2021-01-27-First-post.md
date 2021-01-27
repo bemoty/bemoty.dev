@@ -1,5 +1,6 @@
 ---
 layout: post
+category: example2
 ---
 
 This is my first blog post.
@@ -35,3 +36,4 @@ function fiveStrings() {
 ## Gotcha!
 
 Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Ullamcorper **a lacus** vestibulum sed arcu non odio. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Viverra ipsum nunc aliquet bibendum enim facilisis gravida.
+
