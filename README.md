@@ -6,8 +6,8 @@ This repository is hosting the contents, styling, and code of my very simplistic
 
 Thanks to...
 
-- [riggraz](riggraz) for his awesome [no-style-please](https://github.com/riggraz/no-style-please) Jekyll theme
-- [richeland](/richeland) for his pygment [syntax highlighting css](https://github.com/richleland/pygments-css)
+- [riggraz](https://github.com/riggraz) for his awesome [no-style-please](https://github.com/riggraz/no-style-please) Jekyll theme
+- [richeland](https://github.com/richeland) for his pygment [syntax highlighting css](https://github.com/richleland/pygments-css)
 
 ## License
 
