@@ -17,7 +17,7 @@ bundle exec jekyll serve
 Thanks to...
 
 - [riggraz](https://github.com/riggraz) for his awesome [no-style-please](https://github.com/riggraz/no-style-please) Jekyll theme
-- [richleland](https://github.com/richleland) for his pygment [syntax highlighting css](https://github.com/richleland/pygments-css)
+- [richleland](https://github.com/richleland) for his generated pygment [syntax highlighting css](https://github.com/richleland/pygments-css)
 
 ## License
 
