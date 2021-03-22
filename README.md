@@ -6,7 +6,13 @@ This repository is hosting the contents, styling, and code of my very simplistic
 
 Requires [Ruby](https://www.ruby-lang.org/), [Jekyll](https://jekyllrb.com/) and [Bundler](https://bundler.io/). See more detailled instructions [here](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll).
 
-Run the following to serve the website locally.
+Then install dependencies.
+
+```console
+bundle install
+```
+
+And run the following to serve the website locally.
 
 ```console
 bundle exec jekyll serve
