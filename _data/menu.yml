@@ -2,7 +2,7 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: <span class="emoji">🌐</span> my socials
+  - title: <span class="emoji">👥</span> my socials
     entries:
       - title: twitter
         url: https://twitter.com/bemoty
@@ -19,8 +19,7 @@ entries:
      - title: ... or download it
        url: https://bemoty.dev/public.pgp
   
-
-#  - title: <span class="emoji">✍️</span> blog posts
+#  - title: <span class="emoji">📓</span> blog posts
 #    post_list:
 #      limit: 5
 #      show_more: false
