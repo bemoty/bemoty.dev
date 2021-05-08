@@ -19,6 +19,10 @@ entries:
      - title: ... or download it
        url: https://bemoty.dev/public.pgp
   
+  - title: <span class="emoji">📧</span> get in touch
+    entries:
+      - title: bemoty (at) gommehd.net
+  
 #  - title: <span class="emoji">📓</span> blog posts
 #    post_list:
 #      limit: 5
