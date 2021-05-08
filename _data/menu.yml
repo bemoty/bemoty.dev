@@ -20,14 +20,14 @@ entries:
        url: https://bemoty.dev/public.pgp
   
 
-  - title: <span class="emoji">✍️</span> blog posts
-    post_list:
-      limit: 5
-      show_more: false
-      show_more_text: See archive...
-      show_more_url: archive.html
+#  - title: <span class="emoji">✍️</span> blog posts
+#    post_list:
+#      limit: 5
+#      show_more: false
+#      show_more_text: See archive...
+#      show_more_url: archive.html
 
-  - title: <span class="emoji">📻</span> rss
-    entries:
-      - title: feed.xml
-        url: feed.xml
+#  - title: <span class="emoji">📻</span> rss
+#    entries:
+#      - title: feed.xml
+#        url: feed.xml
