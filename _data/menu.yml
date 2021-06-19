@@ -2,26 +2,25 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: <span class="emoji">👥</span> my socials
+  - title: <span class="emoji">👥</span> follow me here (only if you want)
     entries:
-      - title: twitter
+      - title: Twitter
         url: https://twitter.com/bemoty
-      - title: github
+      - title: GitHub
         url: https://github.com/bemoty
-      - title: youtube
+      - title: YouTube
         url: https://youtube.com/bemoty
-      - title: instagram
+      - title: Instagram
         url: https://instagram.com/joshoty
 
-  - title: <span class="emoji">🔑</span> pgp public key
+  - title: <span class="emoji">🔑</span> PGP
     entries:
      - title: 3151 98E7 FAF8 F8B5 C424  B5FD 78D7 D488 54FA 7AB0
-     - title: ... or download it
        url: https://bemoty.dev/public.pgp
   
   - title: <span class="emoji">📧</span> get in touch
     entries:
-      - title: bemoty (äät-symbol) gommehd.net
+      - title: josh (äät-symbol) bemoty.dev
   
 #  - title: <span class="emoji">📓</span> blog posts
 #    post_list:

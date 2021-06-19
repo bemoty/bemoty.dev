@@ -4,7 +4,7 @@ email: josh@bemoty.dev # email of site's author
 url: https://bemoty.dev # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog"
 description: > # description of the site (multiple lines allowed)
-  bemoty is a software engineer from austria
+  bemoty? bemoty? what's a bemoty?
 
 highlighter: rouge
 permalink: /:slug
