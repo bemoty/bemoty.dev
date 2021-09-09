@@ -10,12 +10,10 @@ entries:
         url: https://github.com/bemoty
       - title: YouTube
         url: https://youtube.com/bemoty
-      - title: Instagram
-        url: https://instagram.com/joshoty
 
   - title: <span class="emoji">🔑</span> PGP
     entries:
-     - title: 3151 98E7 FAF8 F8B5 C424  B5FD 78D7 D488 54FA 7AB0
+     - title: <span class="small">3151 98E7 FAF8 F8B5 C424 B5FD 78D7 D488 54FA 7AB0</span>
        url: https://bemoty.dev/public.pgp
   
   - title: <span class="emoji">📧</span> get in touch
