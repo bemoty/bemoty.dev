@@ -2,7 +2,7 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: <span class="emoji">👥</span> follow me here (only if you want)
+  - title: <span class="emoji">👥</span> follow me here
     entries:
       - title: Twitter
         url: https://twitter.com/bemoty
