@@ -28,14 +28,7 @@ entries:
   #     show_more_text: See archive...
   #     show_more_url: archive.html
 
-<<<<<<< HEAD
   # - title: <span class="emoji">📻</span> RSS
   #   entries:
   #     - title: feed.xml
   #       url: feed.xml
-=======
-#  - title: <span class="emoji">📻</span> rss
-#    entries:
-#      - title: feed.xml
-#        url: feed.xml
->>>>>>> 83fcb6667709b9ad878ccab946f1ce8cadb01f48
