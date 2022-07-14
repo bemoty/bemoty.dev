@@ -2,32 +2,33 @@
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
 entries:
-  - title: <span class="emoji">👥</span> follow me here
+  - title: <span class="emoji">👥</span> Social Media Profiles
     entries:
-      - title: Twitter
-        url: https://twitter.com/bemoty
       - title: GitHub
         url: https://github.com/bemoty
-      - title: YouTube
-        url: https://youtube.com/bemoty
+      - title: LinkedIn
+        url: https://www.linkedin.com/in/joshua-winkler/
+      - title: Twitter
+        url: https://twitter.com/bemoty
 
   - title: <span class="emoji">🔑</span> PGP
     entries:
      - title: <span class="small">3151 98E7 FAF8 F8B5 C424 B5FD 78D7 D488 54FA 7AB0</span>
-       url: https://bemoty.dev/public.pgp
+       url: https://bemoty.dev/pgp.txt
   
-  - title: <span class="emoji">📧</span> get in touch
+  - title: <span class="emoji">📧</span> Get in touch
     entries:
-      - title: josh (äät-symbol) bemoty.dev
+      - title: josh@bemoty.dev
+        url: mailto:josh@bemoty.dev
   
-#  - title: <span class="emoji">📓</span> blog posts
-#    post_list:
-#      limit: 5
-#      show_more: false
-#      show_more_text: See archive...
-#      show_more_url: archive.html
+  # - title: <span class="emoji">📓</span> Blog Posts
+  #   post_list:
+  #     limit: 5
+  #     show_more: true
+  #     show_more_text: See archive...
+  #     show_more_url: archive.html
 
-#  - title: <span class="emoji">📻</span> rss
-#    entries:
-#      - title: feed.xml
-#        url: feed.xml
+  # - title: <span class="emoji">📻</span> RSS
+  #   entries:
+  #     - title: feed.xml
+  #       url: feed.xml

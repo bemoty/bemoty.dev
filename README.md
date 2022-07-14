@@ -27,4 +27,4 @@ Thanks to...
 
 ## License
 
-My website is licensed under the terms of the [MIT license](https://choosealicense.com/licenses/mit/).
+The code for my website is licensed under the terms of the [MIT license](https://choosealicense.com/licenses/mit/).

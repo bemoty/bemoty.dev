@@ -1,11 +1,10 @@
 ---
 layout: post
-category: example2
 ---
 
 This is my first blog post.
 
-For now, it's just a placeholder for a time when I might actually feel comfortable with writing about the stuff I experience every day in a blog. If you're interested, you can follow my [RSS feed](https://bemoty.dev/feed.xml) and you might see a real blog post show up on this page one day.
+For now, it's just a placeholder for a time when I actually have the time to write about some stuff. If you're interested, you can subscribe to my [RSS feed](https://bemoty.dev/feed.xml) and you might see a real blog post show up in your RSS reader one day, or maybe not.
 
 In the meantime, make sure to follow me on my [social media profiles](https://bemoty.dev) if you want to hear from me.
 
@@ -15,9 +14,10 @@ Until then.
 
 Now following: Lots of layout tests.
 
-> Hate to sound sleazy,
-but tease me,
-I don't want it if it's that easy
+> I've made up my mind.
+> Time is running out, make a move.
+> Oh, we can go on.
+> Do you understand? It's all in your hands.
 
 ## Does it work?
 
@@ -33,7 +33,7 @@ function fiveStrings() {
 }
 ```
 
-## Gotcha!
+## Epilogue
 
 Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum. Ullamcorper **a lacus** vestibulum sed arcu non odio. Tempor commodo ullamcorper a lacus vestibulum sed arcu non. Viverra ipsum nunc aliquet bibendum enim facilisis gravida.
 
