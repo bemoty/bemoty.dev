@@ -6,10 +6,10 @@ entries:
     entries:
       - title: GitHub
         url: https://github.com/bemoty
-      - title: LinkedIn
-        url: https://www.linkedin.com/in/joshua-winkler/
       - title: Twitter
         url: https://twitter.com/bemoty
+      - title: Mastodon
+        url: https://mas.to/@bemoty
 
   - title: <span class="emoji">🔑</span> PGP
     entries:
