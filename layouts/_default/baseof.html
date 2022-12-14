@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+        {{ if eq .Kind "404" }}
+            404 bemoty not found
+        {{ else }}
+            {{ .Title }}
+        {{ end }}
+    </title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ "style/font.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "style/main.css" | relURL }}">
+</head>
+<body>
+    <div class="wrapper">
+        {{ partial "header" . }}
+        {{ block "main" . }}
+            <!-- slot -->
+        {{ end }}
+        {{ partial "footer" . }}
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+:root {
+  /* catppuccin: https://github.com/catppuccin/catppuccin */
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --text: #cdd6f4;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #313244;
+  --base: #1e1e2e;
+  --mantle: #181825;
+  --crust: #11111b;
+}
+
+body {
+  font-family: "JetBrainsMono-Regular", monospace;
+  background-color: var(--base);
+  color: var(--text);
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+blockquote {
+  border-left: solid var(--overlay0) 2px;
+  margin-left: 0;
+  padding-left: 1em;
+  color: var(--overlay2);
+}
+
+a {
+  text-decoration: none;
+  color: var(--rosewater)
+}
+
+.wrapper {
+  margin: 4rem 0;
+}
+
+header .logo a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+header .logo a p {
+  font-size: 40pt;
+  font-weight: bold;
+}
+
+header .logo a img {
+  height: 7rem;
+}
+
+header .nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+header .nav a {
+  color: var(--rosewater);
+}
+
+header .nav a:hover {
+  text-decoration: underline var(--rosewater) solid 2px;
+  text-underline-offset: 0.3rem;
+}
+
+main {
+  margin: 3rem;
+  max-width: 42rem;
+}
+
+main .index-links {
+  list-style-type: "> ";
+}
+
+footer p {
+  color: var(--subtext0);
+  font-size: 10pt;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo a p {
+    font-size: 25pt;
+  }
+
+  header .logo a img {
+    height: 4rem;
+  }
+
+  .sandstorm {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 724px) {
+  main {
+    min-width: 42rem;
+  }
+}

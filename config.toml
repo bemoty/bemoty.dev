@@ -1,0 +1,4 @@
+baseURL = 'https://bemoty.org/'
+languageCode = 'en-us'
+title = "i'm bemoty"
+enableRobotsTXT = true

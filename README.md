@@ -1,29 +1,18 @@
-# bemoty.dev
+# bemoty.org
 
-This repository is hosting the contents, styling, and code of my very simplistic website and blog @ bemoty.dev.
+This repository is hosting the contents, styling, and code of my website @ bemoty.org.
 
 ## Installation
 
-Requires [Ruby](https://www.ruby-lang.org/), [Jekyll](https://jekyllrb.com/) and [Bundler](https://bundler.io/). See more detailled instructions [here](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll).
+Requires [Hugo](https://gohugo.io).
 
-Then install dependencies.
+1. Clone the repository and follow the install [Hugo install instructions](https://gohugo.io/installation/) for your operating system.
 
-```console
-bundle install
-```
-
-And run the following to serve the website locally.
+2. cd into the cloned repository and run the Hugo dev server.
 
 ```console
-bundle exec jekyll serve
+hugo server
 ```
-
-## Attribution
-
-Thanks to...
-
-- [riggraz](https://github.com/riggraz) for his awesome [no-style-please](https://github.com/riggraz/no-style-please) Jekyll theme
-- [richleland](https://github.com/richleland) for his generated pygment [syntax highlighting css](https://github.com/richleland/pygments-css)
 
 ## License
 
