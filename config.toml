@@ -1,4 +1,8 @@
 baseURL = 'https://bemoty.org/'
 languageCode = 'en-us'
-title = "i'm bemoty"
+title = "Home - Joshua W."
 enableRobotsTXT = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

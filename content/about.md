@@ -1,23 +1,20 @@
 ---
-title: "about bemoty"
+title: "About - Joshua W."
 date: 2022-12-14T18:01:07+01:00
 draft: false
 ---
 
-## who is bemoty
+<img src="/img/friends.jpg" alt="Friends" style="width: 100%;"/>
+<p class="muted">— me with my friends in Innsbruck</p> 
 
-bemoty is me, **josh**. it's a name i made up when i was a kid and i've been using it ever since.
+### About me
 
-i'm a software developer studying computer science at the [university of innsbruck](https://uibk.ac.at/) and working as head developer at [gommehd.net](https://gommehd.net/).
+I'm Josh and I'm software developer living in Austria, currently studying computer science at the [University of Innsbruck](https://uibk.ac.at/) and working as Head Developer for [GommeHD.net](https://gommehd.net/), a small video game company based in Germany. I have been coding full-stack applications for more than 6 years now and I'm always looking for new challenges.
 
-besides programming, i'm also interested in music, design and (natural) languages.
+Online, I'm also known by my pseudonym **bemoty**, which is a meaningless name I made up as a kid and have used online ever since.
 
-## bemoty and the blockgame
+### Why the smiley bag?
 
-one thing that especially caught my interest is [minecraft](https://minecraft.net). i went from casually playing the game back in 2011 to being part of the [minecraft bug tracker moderation team](https://minecraft.fandom.com/wiki/Bug_tracker), proofreading the [german game+website translation](https://crowdin.com/project/minecraft), administering one of the largest european [minecraft server networks](https://de.wikipedia.org/wiki/GommeHD.net) and meeting a lot of awesome people along the way.
+I drew a smiley on a bag, put it on my head and took a picture because I thought it looked cool and it's been my avatar/logo ever since.
 
-so naturally, the game has a special place in my heart and when someone knows me, they usually know me because of minecraft.
-
-## who is that guy with the bag
-
-it's me. i drew a smiley on a bag, put it on my head and took a picture because i thought it looked cool and it's been my avatar ever since.
+I still think it looks cool.

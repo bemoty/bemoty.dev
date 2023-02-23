@@ -1,19 +1,12 @@
 :root {
-  /* catppuccin: https://github.com/catppuccin/catppuccin */
   --rosewater: #f5e0dc;
-  --flamingo: #f2cdcd;
-  --text: #cdd6f4;
-  --subtext1: #bac2de;
-  --subtext0: #a6adc8;
-  --overlay2: #9399b2;
-  --overlay1: #7f849c;
-  --overlay0: #6c7086;
-  --surface2: #585b70;
-  --surface1: #45475a;
-  --surface0: #313244;
-  --base: #1e1e2e;
-  --mantle: #181825;
-  --crust: #11111b;
+  --rosewater-light: #f5e0dc9f;
+  --text: #cccccc;
+  --subtext0: #7d7d7d;
+  --overlay0: #c3c3c3;
+  --base: #161616;
+  --mantle: #1f1f1f;
+  --crust: #090909;
 }
 
 body {
@@ -36,28 +29,65 @@ blockquote {
 
 a {
   text-decoration: none;
-  color: var(--rosewater)
+  color: var(--rosewater);
+  text-underline-offset: 0.3rem;
+  text-decoration: underline var(--rosewater-light) solid 1px;
 }
+
+a:hover {
+  text-decoration: underline var(--rosewater) solid 2px;
+  text-underline-offset: 0.3rem;
+}
+
+/* ... */
 
 .wrapper {
   margin: 4rem 0;
 }
 
-header .logo a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1.25rem;
+.muted {
+  color: var(--subtext0);
 }
 
-header .logo a p {
-  font-size: 40pt;
+header .bar {
+  display: flex;
+  margin-bottom: 3rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .bar a {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.25rem;
+  text-decoration: none;
+  margin: 0.75rem 0;
+}
+
+header .bar a p {
+  margin: 0;
+}
+
+header .bar a .name {
+  font-size: 1.65rem;
   font-weight: bold;
 }
 
-header .logo a img {
-  height: 7rem;
+header .bar a .bag {
+  height: 4rem;
+}
+
+header .links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+header .links img {
+  height: 1.3rem;
 }
 
 header .nav {
@@ -70,46 +100,94 @@ header .nav {
   justify-content: space-evenly;
 }
 
-header .nav a {
-  color: var(--rosewater);
-}
-
-header .nav a:hover {
-  text-decoration: underline var(--rosewater) solid 2px;
-  text-underline-offset: 0.3rem;
-}
-
 main {
   margin: 3rem;
-  max-width: 42rem;
-}
-
-main .index-links {
-  list-style-type: "> ";
+  width: 42rem;
+  font-size: 1.25rem;
 }
 
 footer p {
-  color: var(--subtext0);
-  font-size: 10pt;
+  font-size: 0.75rem;
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-  header .logo a p {
-    font-size: 25pt;
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  border: 2px solid var(--mantle);
+  border-radius: 0.5rem;
+}
+
+.portfolio-item > img {
+  width: 100%;
+  min-height: 12rem;
+  object-fit: cover;
+}
+
+.portfolio-item .card-body {
+  padding: 1.25rem;
+  height: 100%;
+  background-color: var(--crust);
+}
+
+.portfolio-item .card-body .sublink {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.portfolio-item .card-body .sublink img {
+  margin-left: 2px;
+  margin-top: 1.5px;
+  height: 1.4rem;
+}
+
+.portfolio-item .card-title {
+  margin: 0;
+}
+
+/* ... */
+
+@media only screen and (max-width: 640px) {
+  main {
+    width: 20rem;
   }
 
-  header .logo a img {
-    height: 4rem;
+  header .bar {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .sandstorm {
-    display: none;
+  .portfolio-grid {
+    grid-template-columns: 100%;
   }
 }
 
-@media only screen and (min-width: 724px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   main {
-    min-width: 42rem;
+    width: 22rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 28rem;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: 50% 50%;
   }
 }

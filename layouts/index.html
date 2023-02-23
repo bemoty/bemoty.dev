@@ -1,10 +1,40 @@
 {{ define "main" }}
 <main>
-	<p>hi, my name is josh and i'm a software developer.</p>
-	<ul class="index-links">
-		<li><a href="https://github.com/bemoty" rel="nofollow" target="_blank">creative github repos</a></li>
-		<li><a href="https://twitter.com/bemoty" rel="nofollow" target="_blank">inactive twitter account</a></li>
-		<li><a href="https://open.spotify.com/playlist/37i9dQZF1EpgG5CZ0HLkO7?si=265cc37ce57e4bd8" rel="nofollow" target="_blank">very good music on spotify</a></li>
-	</ul>
+  <h3>Highlights</h3>
+  <div class="portfolio-grid">
+    {{range where .Site.Pages "Type" "=" "project"}} {{ if .Params.highlight }}
+    <div class="portfolio-item">
+      <img
+        src="{{ .Site.BaseURL }}/img/projects/{{ .Params.image }}"
+        alt="{{ .Title }}"
+      />
+      <div class="card-body">
+        <h4 class="card-title">{{ .Title }}</h4>
+        <a class="sublink" href="{{ .Params.link }}" target="_blank"
+          >{{ .Params.linkName}} <img src="{{ .Site.BaseURL }}/img/arrow.svg" alt="External"/></a
+        >
+        <p class="card-text">{{ .Params.description }}</p>
+      </div>
+    </div>
+    {{ end }} {{ end }}
+  </div>
+  <h3>Side Projects</h3>
+  <div class="portfolio-grid">
+    {{range where .Site.Pages "Type" "=" "project"}} {{ if not .Params.highlight }}
+    <div class="portfolio-item">
+      <img
+        src="{{ .Site.BaseURL }}/img/projects/{{ .Params.image }}"
+        alt="{{ .Title }}"
+      />
+      <div class="card-body">
+        <h4 class="card-title">{{ .Title }}</h4>
+        <a class="sublink" href="{{ .Params.link }}" target="_blank"
+          >{{ .Params.linkName}} <img src="{{ .Site.BaseURL }}/img/arrow.svg" alt="External"/></a
+        >
+        <p class="card-text">{{ .Params.description }}</p>
+      </div>
+    </div>
+    {{ end }} {{ end }}
+  </div>
 </main>
 {{ end }}

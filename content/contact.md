@@ -1,13 +1,13 @@
 ---
-title: "contact bemoty"
+title: "Contact - Joshua W."
 date: 2022-12-14T22:21:33+01:00
 draft: false
 ---
 
-## get in touch
+### Contact me
 
-if you want to get in touch with me, the easiest way to do so is via email.
+If you want to reach out, just send me an email.
 
-> josh(at)bemoty(dot)dev
+> josh@bemoty.dev
 
-not sure if that's enough to trick the bots, but it's worth a shot. also if you're extra paranoid, you can use my [pgp key](/pgp.txt) to send me encrypted messages.
+Feel free to use [my PGP key](/pgp.txt) to send me encrypted messages.
