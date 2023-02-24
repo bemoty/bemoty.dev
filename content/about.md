@@ -4,7 +4,7 @@ date: 2022-12-14T18:01:07+01:00
 draft: false
 ---
 
-<img src="/img/friends.jpg" alt="Friends" style="width: 100%;"/>
+<img src="/img/friends.webp" alt="Friends" style="width: 100%;"/>
 <p class="muted">— me with my friends in Innsbruck</p> 
 
 ### About me

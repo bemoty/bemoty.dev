@@ -1,7 +1,7 @@
 ---
 title: spotify-liked-song-genres
 type: project
-image: spotify-liked-song-genres.png
+image: spotify-liked-song-genres.webp
 link: https://github.com/bemoty/spotify-liked-song-genres
 linkName: github.com
 description: Cronjob for sorting your Spotify "Liked Songs"

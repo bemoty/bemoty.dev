@@ -104,6 +104,7 @@ main {
   margin: 3rem;
   width: 42rem;
   font-size: 1.25rem;
+  padding: 0 1rem;
 }
 
 footer p {
@@ -160,6 +161,7 @@ footer p {
 @media only screen and (max-width: 640px) {
   main {
     width: 20rem;
+    font-size: 1rem;
   }
 
   header .bar {
@@ -169,6 +171,11 @@ footer p {
 
   .portfolio-grid {
     grid-template-columns: 100%;
+  }
+
+  header .nav {
+    gap: 32px;
+    justify-content: center;
   }
 }
 
