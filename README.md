@@ -1,6 +1,6 @@
-# bemoty.org
+# bemoty.dev
 
-This repository is hosting the contents, styling, and code of my website reachable at bemoty.org.
+This repository is hosting the contents, styling, and code of my website reachable at bemoty.dev.
 
 ## Installation
 
