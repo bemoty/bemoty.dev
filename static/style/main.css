@@ -112,6 +112,11 @@ main {
   padding: 0 1rem;
 }
 
+.page {
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
 footer p {
   font-size: 0.75rem;
   text-align: center;
