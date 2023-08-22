@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-  <h3>Highlights</h3>
+  <h3>Project selection</h3>
   <div class="portfolio-grid">
     {{range where .Site.Pages "Type" "=" "project"}} {{ if .Params.highlight }}
     <div class="portfolio-item">
@@ -18,7 +18,7 @@
     </div>
     {{ end }} {{ end }}
   </div>
-  <h3>Side Projects</h3>
+  <h3>On the side</h3>
   <div class="portfolio-grid">
     {{range where .Site.Pages "Type" "=" "project"}} {{ if not .Params.highlight }}
     <div class="portfolio-item">

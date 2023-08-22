@@ -4,7 +4,7 @@ type: project
 image: gommehdnet.webp
 link: https://gommehd.net
 linkName: gommehd.net
-description: Together with my team I'm developing fun minigames and web applications for the GommeHD.net Minecraft Server Network
+description: Together with my team I'm developing minigames and web applications for the GommeHD.net Minecraft Server Network
 highlight: true
 ---
 
