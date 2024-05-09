@@ -1,6 +1,8 @@
 {{ define "main" }}
 <main class="page">
-    <span class="posted">{{ .Page.Date.Format "2006-01-02" }}</span>
-    {{ .Content }}
+  {{ if .Page.Date }}
+  <span class="posted">{{ .Page.Date.Format "2006-01-02" }}</span>
+  {{ end }}
+  <article>{{ .Content }}</article>
 </main>
 {{ end }}

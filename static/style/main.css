@@ -123,6 +123,7 @@ header .nav {
 main {
   margin: 3rem;
   padding: 0 1rem;
+  line-height: 1.6em;
 }
 
 .page {
