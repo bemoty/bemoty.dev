@@ -1,5 +1,6 @@
 {{ define "main" }}
 <main class="page">
+    <span class="posted">{{ .Page.Date.Format "2006-01-02" }}</span>
     {{ .Content }}
 </main>
 {{ end }}

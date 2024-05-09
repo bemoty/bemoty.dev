@@ -6,13 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>
         {{ if eq .Kind "404" }}
-            404 - Joshua W.
+            Not found / Joshua Winkler
         {{ else }}
             {{ .Title }}
         {{ end }}
     </title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}
 	<link rel="stylesheet" href="{{ "style/font.css" | relURL }}">
     <link rel="stylesheet" href="{{ "style/main.css" | relURL }}">
 </head>

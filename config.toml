@@ -1,6 +1,6 @@
-baseURL = 'https://bemoty.org/'
+baseURL = 'https://bemoty.dev'
 languageCode = 'en-us'
-title = "Home - Joshua W."
+title = "Home / Joshua Winkler"
 enableRobotsTXT = true
 description = "Portfolio website of Joshua Winkler"
 [markup]

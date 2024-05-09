@@ -51,6 +51,17 @@ a:hover {
   color: var(--subtext0);
 }
 
+.posted {
+  color: var(--subtext0);
+  font-size: 0.85em;
+}
+
+pre {
+  padding: 0.8rem;
+  text-wrap: wrap;
+  border-radius: 0.5rem;
+}
+
 header {
   padding: 0 2rem;
 }
@@ -108,7 +119,6 @@ header .nav {
 
 main {
   margin: 3rem;
-  font-size: 1.25rem;
   padding: 0 1rem;
 }
 

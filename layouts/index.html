@@ -1,40 +1,5 @@
 {{ define "main" }}
-<main>
-  <h3>Project selection</h3>
-  <div class="portfolio-grid">
-    {{range where .Site.Pages "Type" "=" "project"}} {{ if .Params.highlight }}
-    <div class="portfolio-item">
-      <img
-        src="{{ .Site.BaseURL }}/img/projects/{{ .Params.image }}"
-        alt="{{ .Title }}"
-      />
-      <div class="card-body">
-        <h4 class="card-title">{{ .Title }}</h4>
-        <a class="sublink" href="{{ .Params.link }}" target="_blank"
-          >{{ .Params.linkName}} <img src="{{ .Site.BaseURL }}/img/arrow.svg" alt="External"/></a
-        >
-        <p class="card-text">{{ .Params.description }}</p>
-      </div>
-    </div>
-    {{ end }} {{ end }}
-  </div>
-  <h3>On the side</h3>
-  <div class="portfolio-grid">
-    {{range where .Site.Pages "Type" "=" "project"}} {{ if not .Params.highlight }}
-    <div class="portfolio-item">
-      <img
-        src="{{ .Site.BaseURL }}/img/projects/{{ .Params.image }}"
-        alt="{{ .Title }}"
-      />
-      <div class="card-body">
-        <h4 class="card-title">{{ .Title }}</h4>
-        <a class="sublink" href="{{ .Params.link }}" target="_blank"
-          >{{ .Params.linkName}} <img src="{{ .Site.BaseURL }}/img/arrow.svg" alt="External"/></a
-        >
-        <p class="card-text">{{ .Params.description }}</p>
-      </div>
-    </div>
-    {{ end }} {{ end }}
-  </div>
-</main>
+    <main class="page">
+        {{ .Content }}
+    </main>
 {{ end }}
