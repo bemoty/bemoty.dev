@@ -1,4 +1,4 @@
-baseURL = 'https://bemoty.dev'
+baseURL = 'https://bemoty.dev/'
 languageCode = 'en-us'
 title = "Home / Joshua Winkler"
 enableRobotsTXT = true
