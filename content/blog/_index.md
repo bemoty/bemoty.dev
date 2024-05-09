@@ -2,5 +2,4 @@
 title: "Blog / Joshua Winkler"
 ---
 
-## Blog
-
+### Blog

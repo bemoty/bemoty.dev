@@ -1,6 +1,5 @@
 ---
 title: "Contact / Joshua Winkler"
-date: 2022-12-14T22:21:33+01:00
 draft: false
 ---
 
