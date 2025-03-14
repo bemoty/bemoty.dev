@@ -11,13 +11,11 @@
   src: local("JetBrains Mono"),
     url("/font/JetBrainsMono-Bold.ttf") format("ttf");
   font-weight: bold;
-  font-style: bold;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
   src: local("JetBrains Mono"),
     url("/font/JetBrainsMono-Italic.ttf") format("ttf");
-  font-weight: italic;
   font-style: italic;
 }

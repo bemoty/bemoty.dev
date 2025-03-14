@@ -1,5 +1,5 @@
 ---
-title: "Blog / Joshua Winkler"
+title: "Blog"
 ---
 
-### Blog
+### Blog entries

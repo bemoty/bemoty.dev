@@ -1,5 +1,21 @@
 {{ define "main" }}
 <main class="page">
+
+
+  <!-- Add header image -->
+  {{ with .Params.images }}
+    {{ with index . 0 }}
+    <div style="text-align: center;">
+      <img src="{{ .src }}" alt="{{ .caption | default .src }}"
+           style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+    </div>
+    {{ with .caption }}
+    <p class="muted">— {{ . }}</p>
+    {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <h1 style="margin-bottom: 0.5rem;">{{ .Title }}</h1>
   {{ if .Page.Date }}
   <span class="posted">{{ .Page.Date.Format "2006-01-02" }}</span>
   {{ end }}

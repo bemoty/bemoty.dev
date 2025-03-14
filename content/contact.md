@@ -1,9 +1,7 @@
 ---
-title: "Contact / Joshua Winkler"
+title: "Contact"
 draft: false
 ---
-
-### Contact me
 
 If you want to talk about something, just send me an email.
 

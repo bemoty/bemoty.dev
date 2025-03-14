@@ -6,13 +6,57 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>
         {{ if eq .Kind "404" }}
-            Not found / Joshua Winkler
+            Not found — bemoty.dev
         {{ else }}
-            {{ .Title }}
+            {{ .Title }} — bemoty.dev
         {{ end }}
     </title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.Description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+
+    {{ if eq .Kind "page" }}
+    <meta property="og:type" content="article">
+    {{ else }}
+    <meta property="og:type" content="website">
+    {{ end }}
+
+    {{ with .Description }}
+    <meta property="og:description" content="{{ . }}">
+    <meta name="twitter:description" content="{{ . }}">
+    {{ else }}
+    <meta property="og:description" content="{{ with .Summary }}{{ . | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <meta name="twitter:description" content="{{ with .Summary }}{{ . | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    {{ end }}
+
+    {{ if .Params.images }}
+        {{ range first 1 .Params.images }}
+            {{ if reflect.IsMap . }}
+                <meta property="og:image" content="{{ .src | absURL }}">
+                <meta property="twitter:image" content="{{ .src | absURL }}">
+                {{ with .alt }}<meta property="og:image:alt" content="{{ . }}">{{ end }}
+            {{ else }}
+                <meta property="og:image" content="{{ . | absURL }}">
+                <meta property="twitter:image" content="{{ . | absURL }}">
+            {{ end }}
+        {{ end }}
+    {{ else if .Site.Params.images }}
+        <meta property="og:image" content="{{ index .Site.Params.images 0 | absURL }}">
+        <meta property="twitter:image" content="{{ index .Site.Params.images 0 | absURL }}">
+    {{ else }}
+        <meta property="og:image" content="{{ "/img/social-card.webp" | absURL }}">
+        <meta property="twitter:image" content="{{ "/img/social-card.webp" | absURL }}">
+    {{ end }}
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ .Title }}">
+    {{ with .Site.Params.social.twitter }}
+    <meta name="twitter:site" content="@{{ . }}">
+    {{ end }}
+
     {{ with .OutputFormats.Get "rss" -}}
         {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
@@ -28,7 +72,7 @@
         {{ partial "footer" . }}
     </div>
     <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
+        document.getElementById("year").innerHTML = String(new Date().getFullYear());
     </script>
 </body>
 </html>
