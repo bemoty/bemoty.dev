@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+description: How to get in touch with me.
 draft: false
 ---
 

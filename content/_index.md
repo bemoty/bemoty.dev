@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description: "Personal website and blog of Joshua Winkler (bemoty) - software developer based in Austria."
 draft: false
 ---
 
