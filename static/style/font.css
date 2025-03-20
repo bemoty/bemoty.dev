@@ -1,21 +1,21 @@
 @font-face {
-  font-family: "JetBrains Mono";
-  src: local("JetBrains Mono"),
+    font-family: "JetBrains Mono";
+    src: local("JetBrains Mono"),
     url("/font/JetBrainsMono-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "JetBrains Mono";
-  src: local("JetBrains Mono"),
+    font-family: "JetBrains Mono";
+    src: local("JetBrains Mono"),
     url("/font/JetBrainsMono-Bold.ttf") format("ttf");
-  font-weight: bold;
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: "JetBrains Mono";
-  src: local("JetBrains Mono"),
+    font-family: "JetBrains Mono";
+    src: local("JetBrains Mono"),
     url("/font/JetBrainsMono-Italic.ttf") format("ttf");
-  font-style: italic;
+    font-style: italic;
 }

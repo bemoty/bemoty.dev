@@ -1,219 +1,227 @@
 :root {
-  --rosewater: #f5e0dc;
-  --rosewater-light: #f5e0dc9f;
-  --text: #cccccc;
-  --subtext0: #7d7d7d;
-  --overlay0: #c3c3c3;
-  --base: #161616;
-  --mantle: #1f1f1f;
-  --crust: #090909;
+    --rosewater: #f5e0dc;
+    --rosewater-light: #f5e0dc9f;
+    --text: #cccccc;
+    --subtext0: #7d7d7d;
+    --overlay0: #c3c3c3;
+    --base: #161616;
+    --mantle: #1f1f1f;
+    --crust: #090909;
+    --code: #272822;
 }
 
 body {
-  font-family: "JetBrainsMono-Regular", monospace;
-  background-color: var(--base);
-  color: var(--text);
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    font-family: "JetBrainsMono-Regular", monospace;
+    background-color: var(--base);
+    color: var(--text);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 blockquote {
-  border-left: solid var(--overlay0) 2px;
-  margin-left: 0;
-  padding-left: 1em;
-  color: var(--overlay2);
+    border-left: solid var(--overlay0) 2px;
+    margin-left: 0;
+    padding-left: 1em;
+    color: var(--overlay0);
 }
 
 a {
-  text-decoration: none;
-  color: var(--rosewater);
-  text-underline-offset: 0.3rem;
-  text-decoration: underline var(--rosewater-light) solid 1px;
+    color: var(--rosewater);
+    text-underline-offset: 0.3rem;
+    text-decoration: underline var(--rosewater-light) solid 1px;
 }
 
 a:hover {
-  text-decoration: underline var(--rosewater) solid 2px;
-  text-underline-offset: 0.3rem;
+    text-decoration: underline var(--rosewater) solid 2px;
+    text-underline-offset: 0.3rem;
 }
 
 /* ... */
 
 .wrapper {
-  margin: 4rem 0;
-  width: 75%;
+    margin: 4rem 0;
+    width: 75%;
 }
 
 .muted {
-  color: var(--subtext0);
+    color: var(--subtext0);
 }
 
 .posted {
-  color: var(--subtext0);
-  font-size: 0.85em;
+    color: var(--subtext0);
+    font-size: 0.85em;
+}
+
+:not(pre) > code {
+    background-color: var(--code);
+    padding: 0.2em 0.5em;
+    font-size: 1rem;
+    border-radius: 3px;
 }
 
 pre {
-  padding: 0.8rem;
-  text-wrap: wrap;
-  border-radius: 0.5rem;
+    padding: 0.8rem;
+    text-wrap: nowrap;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    font-size: 1rem;
 }
 
 header {
-  padding: 0 2rem;
+    padding: 0 2rem;
 }
 
 header .bar {
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 800px;
+    display: flex;
+    margin: 0 auto 3rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
 }
 
 header .bar a {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 1.25rem;
-  text-decoration: none;
-  margin: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1.25rem;
+    text-decoration: none;
+    margin: 0.75rem 0;
 }
 
 header .bar a p {
-  margin: 0;
+    margin: 0;
 }
 
 header .bar a .name {
-  font-size: 1.65rem;
-  font-weight: bold;
+    font-size: 1.65rem;
+    font-weight: bold;
 }
 
 header .bar a .bag {
-  height: 4rem;
+    height: 4rem;
 }
 
 header .links {
-  display: flex;
-  flex-direction: row;
-  gap: 1.25rem;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: center;
 }
 
 header .links img {
-  height: 1.3rem;
+    height: 1.3rem;
 }
 
 header .nav {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 800px;
-  justify-content: space-evenly;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+    justify-content: space-evenly;
 }
 
 main {
-  margin: 3rem;
-  padding: 0 1rem;
-  line-height: 1.6em;
+    margin: 3rem;
+    padding: 0 1rem;
+    line-height: 1.6em;
 }
 
 .page {
-  margin: 3rem auto;
-  max-width: 800px;
+    margin: 3rem auto;
+    max-width: 800px;
 }
 
 footer p {
-  font-size: 0.75rem;
-  text-align: center;
+    font-size: 0.75rem;
+    text-align: center;
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  font-size: 1rem;
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    font-size: 1rem;
+    gap: 1rem;
 }
 
 .portfolio-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 
-  border: 2px solid var(--mantle);
-  border-radius: 0.5rem;
+    border: 2px solid var(--mantle);
+    border-radius: 0.5rem;
 }
 
 .portfolio-item > img {
-  width: 100%;
-  min-height: 12rem;
-  object-fit: cover;
+    width: 100%;
+    min-height: 12rem;
+    object-fit: cover;
 }
 
 .portfolio-item .card-body {
-  padding: 1.25rem;
-  height: 100%;
-  background-color: var(--crust);
+    padding: 1.25rem;
+    height: 100%;
+    background-color: var(--crust);
 }
 
 .portfolio-item .card-body .sublink {
-  display: flex;
-  align-items: center;
-  font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
 }
 
 .portfolio-item .card-body .sublink img {
-  margin-left: 2px;
-  margin-top: 1.5px;
-  height: 1.4rem;
+    margin-left: 2px;
+    margin-top: 1.5px;
+    height: 1.4rem;
 }
 
 .portfolio-item .card-title {
-  margin: 0;
+    margin: 0;
 }
 
 /* ... */
 
 @media only screen and (max-width: 640px) {
-  main {
-    font-size: 1rem;
-    margin: 3rem 1rem;
-  }
+    main {
+        font-size: 1rem;
+        margin: 3rem 1rem;
+    }
 
-  .wrapper {
-    width: 95%;
-  }
+    .wrapper {
+        width: 95%;
+    }
 
-  header .bar {
-    flex-direction: column;
-    align-items: center;
-  }
+    header .bar {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .portfolio-grid {
-    grid-template-columns: 100%;
-  }
+    .portfolio-grid {
+        grid-template-columns: 100%;
+    }
 
-  header .nav {
-    gap: 32px;
-    justify-content: center;
-  }
+    header .nav {
+        gap: 32px;
+        justify-content: center;
+    }
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .wrapper {
-    width: 80%;
-  }
-  
-  .portfolio-grid {
-    grid-template-columns: 50% 50%;
-  }
+    .wrapper {
+        width: 80%;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 50% 50%;
+    }
 }
