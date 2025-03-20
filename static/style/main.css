@@ -56,6 +56,13 @@ a:hover {
     font-size: 0.85em;
 }
 
+code {
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 :not(pre) > code {
     background-color: var(--code);
     padding: 0.2em 0.5em;
