@@ -60,6 +60,7 @@
     {{ with .OutputFormats.Get "rss" -}}
         {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
+	<link rel="preload" href="{{ "font/JetBrainsMono-Regular.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
 	<link rel="stylesheet" href="{{ "style/font.css" | relURL }}">
     <link rel="stylesheet" href="{{ "style/main.css" | relURL }}">
 </head>
@@ -71,8 +72,5 @@
         {{ end }}
         {{ partial "footer" . }}
     </div>
-    <script>
-        document.getElementById("year").innerHTML = String(new Date().getFullYear());
-    </script>
 </body>
 </html>

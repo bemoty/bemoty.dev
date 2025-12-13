@@ -4,7 +4,7 @@ description: How to get in touch with me.
 draft: false
 ---
 
-If you want to talk about something, just send me an email.
+Want to talk about something? Let's use good old email.
 
 > josh@bemoty.dev
 
