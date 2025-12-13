@@ -2,6 +2,7 @@
 title: "About this blog"
 date: 2024-05-09T16:00:00+02:00
 description: Just a little test for my Hugo setup.
+tags: ["meta", "hugo", "blog"]
 draft: false
 images:
   - src: /img/blog/willow.webp

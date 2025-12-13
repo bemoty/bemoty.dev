@@ -1,24 +1,40 @@
 {{ define "main" }}
-<main class="page">
+    <main class="page">
 
 
-  <!-- Add header image -->
-  {{ with .Params.images }}
-    {{ with index . 0 }}
-    <div style="text-align: center;">
-      <img src="{{ .src }}" alt="{{ .caption | default .src }}"
-           style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
-    </div>
-    {{ with .caption }}
-    <p class="muted">— {{ . }}</p>
-    {{ end }}
-    {{ end }}
-  {{ end }}
+        <!-- Add header image -->
+        {{ with .Params.images }}
+            {{ with index . 0 }}
+                <div style="text-align: center;">
+                    <img src="{{ .src }}" alt="{{ .caption | default .src }}"
+                         style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+                </div>
+                {{ with .caption }}
+                    <p class="muted">— {{ . }}</p>
+                {{ end }}
+            {{ end }}
+        {{ end }}
 
-  <h3 style="margin-bottom: 0.5rem;">{{ .Title }}</h3>
-  {{ if .Page.Date }}
-  <span class="posted">{{ .Page.Date.Format "2006-01-02" }}</span>
-  {{ end }}
-  <article>{{ .Content }}</article>
-</main>
+        <h3 style="margin-bottom: 0.5rem;">{{ .Title }}</h3>
+
+        <div style="margin-bottom: 1rem;">
+            {{ if .Page.Date }}
+                <span class="posted"
+                      style="color: #a1a1aa; margin-right: 15px;">
+                    {{ .Page.Date.Format "2006-01-02" }}
+                </span>
+            {{ end }}
+
+            {{ with .Params.tags }}
+                {{ range . }}
+                    <a href="{{ "tags" | absURL }}/{{ . | urlize }}"
+                       style="color: #a1a1aa; text-decoration: none; margin-right: 10px; font-size: 0.9em;">
+                        #{{ . }}
+                    </a>
+                {{ end }}
+            {{ end }}
+        </div>
+
+        <article>{{ .Content }}</article>
+    </main>
 {{ end }}
