@@ -1,6 +1,6 @@
 ---
-title: "Home"
-description: "My personal website and blog."
+title: "Joshua Winkler"
+description: "I am a software developer and Computer Science student based in Innsbruck, Austria."
 draft: false
 ---
 

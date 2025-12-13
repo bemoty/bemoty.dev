@@ -2,10 +2,19 @@ baseURL = 'https://bemoty.dev/'
 languageCode = 'en-us'
 title = "bemoty | Joshua Winkler"
 enableRobotsTXT = true
+
+disableKinds = ["category", "tag", "taxonomy", "term"]
+
 [params]
-  author = "Joshua Winkler"
-  description = "Personal website and blog of Joshua Winkler (bemoty) - software developer and technology enthusiast."
+author = "Joshua Winkler"
+description = "I am a software developer and Computer Science student based in Innsbruck, Austria."
+
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
