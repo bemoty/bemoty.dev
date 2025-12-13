@@ -21,6 +21,6 @@ like creating modern web user interfaces, preferably with Next.js.
 > Why manually solve a problem in an hour when you can spend five hours automating it?
 
 When I'm not coding, I'm probably [making music](https://soundcloud.com/bemoty), reading a
-book, hanging out with my friends, or fiddling with my Arch installation and regretting it immediately.
+book, starting another Cyberpunk playthrough, or fiddling with my Arch installation and regretting it immediately.
 
 Interested in collaborating? [Shoot me an email](/contact).
