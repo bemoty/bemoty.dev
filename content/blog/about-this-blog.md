@@ -4,8 +4,8 @@ date: 2024-05-09T16:00:00+02:00
 description: Just a little test for my Hugo setup.
 draft: false
 images:
-  - src: /img/willow.webp
-    caption: "picture of a Willow tree I took at a local café"
+  - src: /img/blog/willow.webp
+    caption: "just picture of a Willow tree I took at a local café"
 ---
 
 Hi, this post is really just a test for whether or not my [Hugo](https://gohugo.io) blog setup is working as expected. So if you're reading this and you're not me, congratulations! You've found my website (in a working state)! 🎉

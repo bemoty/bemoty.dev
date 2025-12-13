@@ -6,7 +6,7 @@ This repository is hosting the contents, styling, and code of my website reachab
 
 Requires [Hugo](https://gohugo.io).
 
-1. Clone the repository and follow the install [Hugo install instructions](https://gohugo.io/installation/) for your operating system.
+1. Clone the repository and follow the [Hugo install instructions](https://gohugo.io/installation/) for your operating system.
 
 2. cd into the cloned repository and run the Hugo dev server.
 
