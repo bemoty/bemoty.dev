@@ -33,6 +33,9 @@ a {
     color: var(--rosewater);
     text-underline-offset: 0.3rem;
     text-decoration: underline var(--rosewater-light) solid 1px;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: var(--rosewater-light);
+    -webkit-text-decoration-style: solid;
 }
 
 a:hover {
@@ -110,7 +113,9 @@ header .bar a .name {
 }
 
 header .bar a .bag {
+    width: 4rem;
     height: 4rem;
+    object-fit: cover;
 }
 
 header .links {
@@ -239,6 +244,18 @@ footer p {
     header .bar {
         flex-direction: column;
         align-items: center;
+    }
+
+    header .bar a .name {
+        font-size: 1.3rem;
+    }
+
+    header .links {
+        gap: 0.75rem;
+    }
+
+    .intro-section {
+        justify-content: center;
     }
 
     .portfolio-grid {
