@@ -1,0 +1,94 @@
+[education]
+title.en = "Education"
+title.de = "Ausbildung"
+
+[education.uibk]
+name.en = "University of Innsbruck"
+name.de = "Universität Innsbruck"
+
+degree.en = "Bachelor of Science, Computer Science"
+degree.de = "Bachelor of Science, Informatik"
+
+location.en = "Innsbruck, Austria"
+location.de = "Innsbruck, Österreich"
+
+time.en = "October 2021 - Present"
+time.de = "Oktober 2021 - Present"
+
+[education.htlibk]
+name.en = "HTBLuVA Anichstraße Innsbruck"
+name.de = "HTBLuVA Anichstraße Innsbruck"
+
+degree.en = "Matura, Industrial Engineering – Computer Science"
+degree.de = "Matura, Wirtschaftsingenieure – Informatik"
+
+location.en = "Innsbruck, Austria"
+location.de = "Innsbruck, Österreich"
+
+time.en = "October 2016 - July 2021"
+time.de = "Oktober 2016 - Juli 2021"
+
+[experience]
+title.en = "Experience"
+title.de = "Erfahrung"
+
+[experience.indielemon]
+role.en = "Lead Software Engineer"
+role.de = "Leitender Softwareentwickler"
+
+name.en = "GommeHD.net (IndieLemon GmbH & Co. KG)"
+name.de = "GommeHD.net (IndieLemon GmbH & Co. KG)"
+
+location.en = "Gadebusch, Germany (Remote)"
+location.de = "Gadebusch, Deutschland (Remote)"
+
+time.en = "January 2021 - Present"
+time.de = "Januar 2021 - Jetzt"
+
+entry-1.en = "Progressed from volunteer developer (2018) to Lead Software Engineer (2021), leading technical development across a distributed team of 15+ volunteer developers, overseeing the entire engineering lifecycle from recruitment and onboarding to code reviews and CI/CD pipeline management (GitLab, Nexus)."
+entry-1.de = "e1"
+
+entry-2.en = "Oversaw a hybrid infrastructure: a Kubernetes cluster (Rancher, Kustomize) for web services, and a custom Netty-based distributed system for orchestrating game servers supporting 3,000+ concurrent players."
+entry-2.de = "e2"
+
+entry-3.en = "Architected \"Guardian,\" a centralized moderation platform built with Next.js and Apollo Federation (GraphQL). The system integrates a cluster of Java microservices to enable game replay analysis and ban appeals for a 50-person moderation team."
+entry-3.de = "e3"
+
+entry-4.en = "Engineered mission-critical tournament infrastructure for live events featuring Germany's largest Twitch streamers, ensuring zero downtime while handling 50,000+ live viewers."
+entry-4.de = "e4"
+
+[projects]
+title.en = "Projects & Volunteering"
+title.de = "Projekte & Freiwilligenarbeit"
+
+[projects.dairy]
+name.en = "Thesis: Model-checking for DAIRY"
+name.de = "x"
+
+time.en = "June 2025 - Present"
+time.de = "Juni 2025 - Present"
+
+entry-1.en = "Designed a \"Continuous Integration\" system for semantic data models (IFC/OWL) that automatically triggers reasoning jobs when datasets change."
+entry-1.de = "x"
+
+entry-2.en = "Engineered a communication layer using gRPC to link the Java reasoning service with the core platform"
+entry-2.de = "x"
+
+entry-3.en = "Developed a Next.js dashboard for users to manage validation rules and view real-time reasoning results."
+entry-3.de = "x"
+
+[projects.mojang]
+name.en = "Mojang JIRA Bug Tracker Moderator"
+name.de = "x"
+
+time.en = "February 2018 - Present"
+time.de = "Februar 2018 - Jetzt"
+
+entry-1.en = "Volunteer liaison between the community and Mojang developers; analyzed game source code to identify root causes for bugs and proposed fixes directly to the engineering team."
+entry-1.de = "x"
+
+entry-2.en = "Developed custom browser-based tools/scripts to help moderation efforts, increasing efficiency for the volunteer moderation team."
+entry-2.de = "x"
+
+entry-3.en = "Received formal recognition from Mojang Studios for technical analysis of source code, bug reproduction, and custom tooling that improved moderation efficiency."
+entry-3.de = "x"

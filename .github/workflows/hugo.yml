@@ -42,6 +42,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -56,6 +58,10 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Build CVs
+        run: |
+          typst compile cv/resume.typ public/cv-en-joshua-winkler.pdf --input lang=en
+          typst compile cv/resume.typ public/cv-de-joshua-winkler.pdf --input lang=de
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
