@@ -87,8 +87,8 @@
           _#name _
         ],
         align(right)[
-          #date \
-          _#location _
+          #location \
+          _#date _
         ]
       )
       #list(..points)
