@@ -66,20 +66,20 @@
   [#t("projects", "mojang", "entry-3")],
 )
 
-#resume_heading("Technical Skills")
+#resume_heading(t("skills", "name"))
 #skill_item(
-  category: "Languages",
+  category: t("skills", "languages"),
   skills: "Java, TypeScript, SQL, HTML/CSS, Go, GraphQL, Python"
 )
 #skill_item(
-  category: "Frameworks",
+  category: t("skills", "frameworks"),
   skills: "React, Next.js, Vue/Nuxt, Node.js"
 )
 #skill_item(
-  category: "Infrastructure & Tools",
+  category: t("skills", "infra"),
   skills: "Git, Docker, Kubernetes, GitLab CI, gRPC, Linux, JIRA"
 )
 #skill_item(
-  category: "Libraries & Core",
+  category: t("skills", "libraries"),
   skills: "Netty, Apollo Federation, Tailwind CSS"
 )

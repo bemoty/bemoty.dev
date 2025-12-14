@@ -46,16 +46,16 @@ time.en = "January 2021 - Present"
 time.de = "Januar 2021 - Jetzt"
 
 entry-1.en = "Progressed from volunteer developer (2018) to Lead Software Engineer (2021), leading technical development across a distributed team of 15+ volunteer developers, overseeing the entire engineering lifecycle from recruitment and onboarding to code reviews and CI/CD pipeline management (GitLab, Nexus)."
-entry-1.de = "e1"
+entry-1.de = "Aufstieg vom freiwilligen Entwickler (2018) zum leitenden Softwareentwickler (2021), Leitung der technischen Entwicklung in einem verteilten Team von mehr als 15 freiwilligen Entwicklern, Überwachung des gesamten Entwicklungszyklus von der Rekrutierung und Einarbeitung bis hin zu Code-Reviews und CI/CD-Pipeline-Management (GitLab, Nexus)."
 
 entry-2.en = "Oversaw a hybrid infrastructure: a Kubernetes cluster (Rancher, Kustomize) for web services, and a custom Netty-based distributed system for orchestrating game servers supporting 3,000+ concurrent players."
-entry-2.de = "e2"
+entry-2.de = "Überwachung einer hybriden Infrastruktur: ein Kubernetes-Cluster (Rancher, Kustomize) für Webdienste und ein auf Netty basierendes verteiltes System zur Orchestrierung von Spielservern für mehr als 3.000 gleichzeitige Spieler."
 
 entry-3.en = "Architected \"Guardian,\" a centralized moderation platform built with Next.js and Apollo Federation (GraphQL). The system integrates a cluster of Java microservices to enable game replay analysis and ban appeals for a 50-person moderation team."
-entry-3.de = "e3"
+entry-3.de = "Entwicklung von „Guardian“, einer zentralisierten Moderationsplattform, die mit Next.js und Apollo Federation (GraphQL) erstellt wurde. Das System integriert einen Cluster von Java-Microservices, um die Bearbeitung von Spielermeldungen für ein 50-köpfiges Moderationsteam zu ermöglichen."
 
 entry-4.en = "Engineered mission-critical tournament infrastructure for live events featuring Germany's largest Twitch streamers, ensuring zero downtime while handling 50,000+ live viewers."
-entry-4.de = "e4"
+entry-4.de = "Entwicklung einer missionskritischen Turnierinfrastruktur für Live-Events mit Deutschlands größten Twitch-Streamern mit mehr als 50.000 Live-Zuschauern."
 
 [projects]
 title.en = "Projects & Volunteering"
@@ -63,32 +63,48 @@ title.de = "Projekte & Freiwilligenarbeit"
 
 [projects.dairy]
 name.en = "Thesis: Model-checking for DAIRY"
-name.de = "x"
+name.de = "Abschlussarbeit: Model-checking for DAIRY"
 
 time.en = "June 2025 - Present"
 time.de = "Juni 2025 - Present"
 
 entry-1.en = "Designed a \"Continuous Integration\" system for semantic data models (IFC/OWL) that automatically triggers reasoning jobs when datasets change."
-entry-1.de = "x"
+entry-1.de = "Entwicklung eines „Continuous Integration”-Systems für semantische Datenmodelle (IFC/OWL), das bei Änderungen an Datensätzen automatisch Reasoning-Prozesse auslöst."
 
-entry-2.en = "Engineered a communication layer using gRPC to link the Java reasoning service with the core platform"
-entry-2.de = "x"
+entry-2.en = "Engineered a communication layer using gRPC to link the Java reasoning service with the core platform."
+entry-2.de = "Entwicklung einer Kommunikationsschicht unter Verwendung von gRPC zur Verbindung des Java-Reasoning-Dienstes mit der Kernplattform."
 
 entry-3.en = "Developed a Next.js dashboard for users to manage validation rules and view real-time reasoning results."
-entry-3.de = "x"
+entry-3.de = "Entwicklung eines Next.js-Dashboards, über das Benutzer Validierungsregeln verwalten und Echtzeit-Reasoning-Ergebnisse anzeigen können."
 
 [projects.mojang]
 name.en = "Mojang JIRA Bug Tracker Moderator"
-name.de = "x"
+name.de = "Mojang JIRA Bug Tracker Moderator"
 
 time.en = "February 2018 - Present"
 time.de = "Februar 2018 - Jetzt"
 
 entry-1.en = "Volunteer liaison between the community and Mojang developers; analyzed game source code to identify root causes for bugs and proposed fixes directly to the engineering team."
-entry-1.de = "x"
+entry-1.de = "Freiwilliger Verbindungsmann zwischen der Community und den Entwicklern von Mojang; analysierte den Quellcode des Spiels, um die Ursachen für Fehler zu identifizieren, und schlug dem Entwicklerteam direkt Korrekturen vor."
 
 entry-2.en = "Developed custom browser-based tools/scripts to help moderation efforts, increasing efficiency for the volunteer moderation team."
-entry-2.de = "x"
+entry-2.de = "Entwicklung von browserbasierten Tools/Skripts zur Unterstützung der Moderationsarbeit, wodurch die Effizienz des ehrenamtlichen Moderationsteams gesteigert wurde."
 
-entry-3.en = "Received formal recognition from Mojang Studios for technical analysis of source code, bug reproduction, and custom tooling that improved moderation efficiency."
-entry-3.de = "x"
+entry-3.en = "Received formal recognition from Mojang Studios for my work on the bug tracker."
+entry-3.de = "Erhielt von Mojang Studios eine offizielle Anerkennung für meine Arbeit auf dem Bug-Tracker."
+
+[skills]
+name.en = "Technical Skills"
+name.de = "Technische Fähigkeiten"
+
+languages.en = "Sprachen"
+languages.de = "Languages"
+
+frameworks.en = "Frameworks"
+frameworks.de = "Frameworks"
+
+infra.en = "Infrastrucutre & Tools"
+infra.de = "Infrastruktur & Tools"
+
+libraries.en = "Libraries & Other"
+libraries.de = "Bibliotheken & Anderes"
