@@ -63,10 +63,10 @@ title.de = "Projekte & Freiwilligenarbeit"
 
 [projects.dairy]
 name.en = "Thesis: Model-checking for DAIRY"
-name.de = "Abschlussarbeit: Model-checking for DAIRY"
+name.de = "Bachelor: Model-checking for DAIRY"
 
 time.en = "June 2025 - Present"
-time.de = "Juni 2025 - Present"
+time.de = "Juni 2025 - Jetzt"
 
 entry-1.en = "Designed a \"Continuous Integration\" system for semantic data models (IFC/OWL) that automatically triggers reasoning jobs when datasets change."
 entry-1.de = "Entwicklung eines „Continuous Integration”-Systems für semantische Datenmodelle (IFC/OWL), das bei Änderungen an Datensätzen automatisch Reasoning-Prozesse auslöst."
@@ -97,8 +97,8 @@ entry-3.de = "Erhielt von Mojang Studios eine offizielle Anerkennung für meine 
 name.en = "Technical Skills"
 name.de = "Technische Fähigkeiten"
 
-languages.en = "Sprachen"
-languages.de = "Languages"
+languages.en = "Languages"
+languages.de = "Sprachen"
 
 frameworks.en = "Frameworks"
 frameworks.de = "Frameworks"
