@@ -1,2 +1,16 @@
-<img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="max-width: 100%; display: block; margin: 0 auto;"/>
-<p class="muted">— {{ .Get "caption" }}</p>
+{{ $src := .Get "src" }}
+{{ $img := resources.Get (strings.TrimPrefix "/" $src) }}
+{{ if $img }}
+<img src="{{ $img.RelPermalink }}"
+     alt="{{ .Get "alt" }}"
+     width="{{ $img.Width }}"
+     height="{{ $img.Height }}"
+     loading="lazy"
+     style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+{{ else }}
+<img src="{{ $src }}"
+     alt="{{ .Get "alt" }}"
+     loading="lazy"
+     style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+{{ end }}
+{{ with .Get "caption" }}<p class="muted">— {{ . }}</p>{{ end }}

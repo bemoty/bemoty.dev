@@ -4,11 +4,26 @@
             <header>
                 {{ with .Params.images }}
                     {{ with index . 0 }}
-                        <div class="article-image">
-                            <img src="{{ .src }}" alt="{{ .caption | default .src }}"/>
-                        </div>
-                        {{ with .caption }}
-                            <p class="muted">— {{ . }}</p>
+                        {{ $imgPath := .src }}
+                        {{ $img := resources.Get (strings.TrimPrefix "/" $imgPath) }}
+                        {{ if $img }}
+                            <div class="article-image">
+                                <img src="{{ $img.RelPermalink }}"
+                                     alt="{{ .caption | default .src }}"
+                                     width="{{ $img.Width }}"
+                                     height="{{ $img.Height }}"
+                                     loading="lazy"/>
+                            </div>
+                            {{ with .caption }}
+                                <p class="muted">— {{ . }}</p>
+                            {{ end }}
+                        {{ else }}
+                            <div class="article-image">
+                                <img src="{{ .src }}" alt="{{ .caption | default .src }}" loading="lazy"/>
+                            </div>
+                            {{ with .caption }}
+                                <p class="muted">— {{ . }}</p>
+                            {{ end }}
                         {{ end }}
                     {{ end }}
                 {{ end }}
