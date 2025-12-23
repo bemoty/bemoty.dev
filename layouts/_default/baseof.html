@@ -59,12 +59,66 @@
     <meta name="twitter:site" content="@{{ . }}">
     {{ end }}
 
+    {{ if eq .Type "blog" }}
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ with .Lastmod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+    <meta property="article:author" content="{{ .Site.Params.author }}">
+    {{ with .Params.tags }}
+        {{ range . }}
+        <meta property="article:tag" content="{{ . }}">
+        {{ end }}
+    {{ end }}
+    {{ end }}
+
     {{ with .OutputFormats.Get "rss" -}}
         {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
 	<link rel="preload" href="{{ "font/JetBrainsMono-Regular.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
 	<link rel="stylesheet" href="{{ "style/font.css" | relURL }}">
     <link rel="stylesheet" href="{{ "style/main.css" | relURL }}">
+
+    {{ if .IsHome }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joshua Winkler",
+      "url": "https://bemoty.dev",
+      "jobTitle": "Software Developer",
+      "sameAs": [
+        "https://github.com/bemoty",
+        "https://www.linkedin.com/in/joshua-winkler/",
+        "https://bsky.app/profile/bemoty.dev"
+      ]
+    }
+    </script>
+    {{ end }}
+
+    {{ if and (eq .Kind "page") (eq .Type "blog") }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ .Title }}",
+      "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+      {{ with .Lastmod }}"dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+      "author": {
+        "@type": "Person",
+        "name": "{{ .Site.Params.author }}"
+      },
+      {{ with .Description }}"description": "{{ . }}",{{ end }}
+      {{ with .Params.images }}
+        {{ with index . 0 }}
+      "image": "{{ .src | absURL }}",
+        {{ end }}
+      {{ end }}
+      "publisher": {
+        "@type": "Person",
+        "name": "{{ .Site.Params.author }}"
+      }
+    }
+    </script>
+    {{ end }}
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
