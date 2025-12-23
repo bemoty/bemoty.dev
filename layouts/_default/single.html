@@ -4,9 +4,8 @@
             <header>
                 {{ with .Params.images }}
                     {{ with index . 0 }}
-                        <div style="text-align: center;">
-                            <img src="{{ .src }}" alt="{{ .caption | default .src }}"
-                                 style="max-width: 100%; height: auto; display: block; margin: 0 auto;"/>
+                        <div class="article-image">
+                            <img src="{{ .src }}" alt="{{ .caption | default .src }}"/>
                         </div>
                         {{ with .caption }}
                             <p class="muted">— {{ . }}</p>
@@ -14,23 +13,23 @@
                     {{ end }}
                 {{ end }}
 
-                <h1 style="margin-bottom: 0.5rem;">{{ .Title }}</h1>
+                <h1>{{ .Title }}</h1>
 
-                <div style="margin-bottom: 1rem;">
+                <div class="article-meta">
                     {{ if .Page.Date }}
-                        <time datetime="{{ .Page.Date.Format "2006-01-02" }}" class="posted"
-                              style="color: #a1a1aa; margin-right: 15px;">
+                        <time datetime="{{ .Page.Date.Format "2006-01-02" }}" class="posted">
                             {{ .Page.Date.Format "2006-01-02" }}
                         </time>
                     {{ end }}
 
                     {{ with .Params.tags }}
-                        {{ range . }}
-                            <a href="{{ "tags" | absURL }}/{{ . | urlize }}"
-                               style="color: #a1a1aa; text-decoration: none; margin-right: 10px; font-size: 0.9em;">
-                                #{{ . }}
-                            </a>
-                        {{ end }}
+                        <div class="article-tags">
+                            {{ range . }}
+                                <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="tag">
+                                    #{{ . }}
+                                </a>
+                            {{ end }}
+                        </div>
                     {{ end }}
                 </div>
             </header>

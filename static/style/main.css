@@ -226,9 +226,69 @@ main {
     max-width: 800px;
 }
 
+/* Article styles */
+article header .article-image {
+    text-align: center;
+}
+
+article header .article-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+article header h1 {
+    margin-bottom: 0.5rem;
+}
+
+article header .article-meta {
+    margin-bottom: 1rem;
+}
+
+article header .article-meta .posted {
+    margin-right: 15px;
+}
+
+article header .article-meta .article-tags {
+    display: inline;
+}
+
+article header .article-meta .article-tags .tag {
+    color: var(--subtext0);
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+article header .article-meta .article-tags .tag:hover {
+    color: var(--rosewater);
+}
+
+footer {
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: var(--subtext0);
+    font-size: 0.9rem;
+}
+
 footer p {
     font-size: 0.75rem;
     text-align: center;
+    margin-top: 0.5rem;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover {
+    color: var(--rosewater);
+}
+
+footer .source-link {
+    margin-left: 10px;
 }
 
 .portfolio-grid {
