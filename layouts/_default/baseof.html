@@ -32,6 +32,8 @@
     <meta name="twitter:description" content="{{ with .Summary }}{{ . | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     {{ end }}
 
+    <link rel="canonical" href="{{ .Permalink }}">
+
     {{ if .Params.images }}
         {{ range first 1 .Params.images }}
             {{ if reflect.IsMap . }}
