@@ -2,7 +2,7 @@
     --rosewater: #f5e0dc;
     --rosewater-light: #f5e0dc9f;
     --text: #cccccc;
-    --subtext0: #7d7d7d;
+    --subtext0: #a1a1aa;
     --overlay0: #c3c3c3;
     --base: #161616;
     --mantle: #1f1f1f;
@@ -43,6 +43,52 @@ a:hover {
     text-underline-offset: 0.3rem;
 }
 
+/* Keyboard navigation & focus styles */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--rosewater);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+header .nav a:focus-visible {
+    outline: 2px solid var(--rosewater);
+    outline-offset: 4px;
+}
+
+header .links a:focus-visible {
+    outline: 2px solid var(--rosewater);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Skip to main content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 16px;
+    background: var(--base);
+    color: var(--rosewater);
+    padding: 8px 16px;
+    text-decoration: underline;
+    z-index: 100;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skip-link {
+        transition: none;
+    }
+}
+
 /* ... */
 
 .wrapper {
@@ -81,7 +127,7 @@ pre {
     font-size: 1rem;
 }
 
-header {
+body > .wrapper > header {
     padding: 0 2rem;
 }
 
@@ -264,6 +310,15 @@ footer p {
 
     header .nav {
         gap: 32px;
+        justify-content: center;
+    }
+
+    header .nav a,
+    header .links a {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
         justify-content: center;
     }
 }

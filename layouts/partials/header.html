@@ -7,12 +7,13 @@
         <p class="muted">bemoty.dev</p>
       </div>
     </a>
-    <div class="links">
+    <nav aria-label="Social media links" class="links">
       <a
         href="https://bsky.app/profile/bemoty.dev"
         target="_blank"
         title="My profile on Bluesky"
         rel="nofollow noreferrer"
+        aria-label="Bluesky profile"
         ><img src="{{ "img/social/bluesky.svg" | relURL }}" alt="Bluesky Logo" width="21" height="21"
       /></a>
       <a
@@ -20,6 +21,7 @@
         target="_blank"
         title="My profile on GitHub"
         rel="nofollow noreferrer"
+        aria-label="GitHub profile"
         ><img src="{{ "img/social/github.svg" | relURL }}" alt="GitHub Logo" width="21" height="21"
       /></a>
       <a
@@ -27,22 +29,25 @@
         target="_blank"
         title="My profile on LinkedIn"
         rel="nofollow noreferrer"
+        aria-label="LinkedIn profile"
         ><img src="{{ "img/social/linkedin.svg" | relURL }}" alt="LinkedIn Logo" width="21" height="21"
       /></a>
-    </div>
+    </nav>
   </div>
-  <ul class="nav">
-    <li>
-      <a href="{{ .Site.BaseURL }}">Home</a>
-    </li>
-    <li>
-      <a href="{{ .Site.BaseURL }}blog">Blog</a>
-    </li>
+  <nav aria-label="Main navigation">
+    <ul class="nav">
       <li>
-          <a href="{{ .Site.BaseURL }}cv-en-joshua-winkler.pdf">CV</a>
+        <a href="{{ .Site.BaseURL }}">Home</a>
       </li>
-    <li>
-      <a href="{{ .Site.BaseURL }}contact">Contact</a>
-    </li>
-  </ul>
+      <li>
+        <a href="{{ .Site.BaseURL }}blog">Blog</a>
+      </li>
+      <li>
+        <a href="{{ .Site.BaseURL }}cv-en-joshua-winkler.pdf">CV</a>
+      </li>
+      <li>
+        <a href="{{ .Site.BaseURL }}contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
 </header>
