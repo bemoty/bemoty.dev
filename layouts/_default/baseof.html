@@ -74,8 +74,10 @@
         {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end }}
 	<link rel="preload" href="{{ "font/JetBrainsMono-Regular.ttf" | relURL }}" as="font" type="font/ttf" crossorigin>
-	<link rel="stylesheet" href="{{ "style/font.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "style/main.css" | relURL }}">
+	{{ $fontCss := resources.Get "style/font.css" | minify }}
+	<link rel="stylesheet" href="{{ $fontCss.RelPermalink }}">
+	{{ $mainCss := resources.Get "style/main.css" | minify }}
+    <link rel="stylesheet" href="{{ $mainCss.RelPermalink }}">
 
     {{ if .IsHome }}
     <script type="application/ld+json">
