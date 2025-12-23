@@ -1,7 +1,8 @@
 <header>
   <div class="bar">
     <a href="{{ .Site.BaseURL }}">
-      <img class="bag" src="{{ "img/avatar.webp" | relURL }}" alt="Me (under a bag)" title="Me (under a bag)" width="64" height="64" />
+      {{ $avatar := resources.Get "img/avatar.webp" }}
+      <img class="bag" src="{{ $avatar.RelPermalink }}" alt="Me (under a bag)" title="Me (under a bag)" width="{{ $avatar.Width }}" height="{{ $avatar.Height }}" />
       <div>
         <p class="name">Joshua Winkler</p>
         <p class="muted">bemoty.dev</p>
