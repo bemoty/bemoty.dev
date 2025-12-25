@@ -22,20 +22,6 @@
   github: "github.com/bemoty",
 )
 
-#resume_heading[#t("education", "title")]
-#edu_item(
-  name: t("education", "uibk", "name"),
-  degree: t("education", "uibk", "degree"),
-  location: t("education", "uibk", "location"),
-  date: t("education", "uibk", "time")
-)
-#edu_item(
-  name: t("education", "htlibk", "name"),
-  degree: t("education", "htlibk", "degree"),
-  location: t("education", "htlibk", "location"),
-  date: t("education", "htlibk", "time")
-)
-
 #resume_heading[#t("experience", "title")]
 #exp_item(
   role: t("experience", "indielemon", "role"),
@@ -64,6 +50,20 @@
   [#t("projects", "mojang", "entry-1")],
   [#t("projects", "mojang", "entry-2")],
   [#t("projects", "mojang", "entry-3")],
+)
+
+#resume_heading[#t("education", "title")]
+#edu_item(
+  name: t("education", "uibk", "name"),
+  degree: t("education", "uibk", "degree"),
+  location: t("education", "uibk", "location"),
+  date: t("education", "uibk", "time")
+)
+#edu_item(
+  name: t("education", "htlibk", "name"),
+  degree: t("education", "htlibk", "degree"),
+  location: t("education", "htlibk", "location"),
+  date: t("education", "htlibk", "time")
 )
 
 #resume_heading(t("skills", "name"))
