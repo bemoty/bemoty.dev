@@ -7,7 +7,7 @@ disableKinds = ["category"]
 
 [params]
 author = "Joshua Winkler"
-description = "I am a software developer and Computer Science student based in Innsbruck, Austria."
+description = "I am a software developer based in Innsbruck, Austria."
 
 [markup]
 [markup.goldmark]

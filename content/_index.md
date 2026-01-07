@@ -1,6 +1,6 @@
 ---
 title: "Joshua Winkler"
-description: "I am a software developer and Computer Science student based in Innsbruck, Austria."
+description: "I am a software developer based in Innsbruck, Austria."
 draft: false
 ---
 
@@ -9,7 +9,7 @@ draft: false
     <div class="intro-text">
         <h1>Hi! I'm Josh.</h1>
         <p>
-            I am a software developer and Computer Science student based in Innsbruck, Austria.
+            I am a software developer based in Innsbruck, Austria.
         </p>
     </div>
 </div>
