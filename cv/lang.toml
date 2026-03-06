@@ -65,8 +65,8 @@ title.de = "Projekte & Freiwilligenarbeit"
 name.en = "Thesis: Model-checking for DAIRY"
 name.de = "Thesis: Model-checking for DAIRY"
 
-time.en = "June 2025 - Present"
-time.de = "Juni 2025 - Jetzt"
+time.en = "June 2025 - January 2026"
+time.de = "Juni 2025 - Januar 2026"
 
 entry-1.en = "Designed a \"Continuous Integration\" system for semantic data models (IFC/OWL) that automatically triggers reasoning jobs when datasets change."
 entry-1.de = "Entwicklung eines „Continuous Integration”-Systems für semantische Datenmodelle (IFC/OWL), das bei Änderungen an Datensätzen automatisch Reasoning-Prozesse auslöst."
