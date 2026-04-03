@@ -24,6 +24,12 @@
 
 #resume_heading[#t("experience", "title")]
 #exp_item(
+  role: t("experience", "deepslate", "role"),
+  name: t("experience", "deepslate", "name"),
+  location: t("experience", "deepslate", "location"),
+  date: t("experience", "deepslate", "time"),
+)
+#exp_item(
   role: t("experience", "indielemon", "role"),
   name: t("experience", "indielemon", "name"),
   location: t("experience", "indielemon", "location"),
@@ -42,14 +48,6 @@
   [#t("projects", "dairy", "entry-1")],
   [#t("projects", "dairy", "entry-2")],
   [#t("projects", "dairy", "entry-3")],
-)
-#project_item(
-  name: t("projects", "mojang", "name"),
-  skills: "Java, JavaScript",
-  date: t("projects", "mojang", "time"),
-  [#t("projects", "mojang", "entry-1")],
-  [#t("projects", "mojang", "entry-2")],
-  [#t("projects", "mojang", "entry-3")],
 )
 
 #resume_heading[#t("education", "title")]
