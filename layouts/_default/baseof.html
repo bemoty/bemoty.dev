@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+	<meta name="theme-color" content="#161616">
+	<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+	{{ $avatar := resources.Get "img/avatar.webp" }}
+	{{ $touchIcon := $avatar.Fill "180x180 Png" }}
+	<link rel="apple-touch-icon" href="{{ $touchIcon.RelPermalink }}">
 	<title>
         {{ if eq .Kind "404" }}
             Not found — bemoty.dev
