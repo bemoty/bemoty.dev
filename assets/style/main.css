@@ -158,12 +158,6 @@ header .bar a .name {
     font-weight: bold;
 }
 
-header .bar a .bag {
-    width: 4rem;
-    height: 4rem;
-    object-fit: cover;
-}
-
 header .links {
     display: flex;
     flex-direction: row;
