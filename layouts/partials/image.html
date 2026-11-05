@@ -1,0 +1,8 @@
+{{- $src := .src }}
+{{- if not .alt }}{{ errorf "%s: image %q needs alt text" .page.File.Path $src }}{{ end }}
+{{- $loading := cond (.eager | default false) "eager" "lazy" }}
+{{- with partial "resolve-image.html" . }}
+<img src="{{ .RelPermalink }}" alt="{{ $.alt }}" width="{{ .Width }}" height="{{ .Height }}" loading="{{ $loading }}" decoding="async">
+{{- else }}
+<img src="{{ $src }}" alt="{{ .alt }}" loading="{{ $loading }}" decoding="async">
+{{- end }}

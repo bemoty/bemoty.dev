@@ -1,0 +1,5 @@
+{{- $img := or (.page.Resources.Get .src) (resources.Get (strings.TrimPrefix "/" .src)) }}
+{{- with $img }}
+  {{- if and (ne .MediaType.SubType "svg") (gt .Width 1600) }}{{ $img = .Resize "1600x" }}{{ end }}
+{{- end }}
+{{- return $img }}

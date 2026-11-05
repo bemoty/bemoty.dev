@@ -221,16 +221,30 @@ main {
 }
 
 /* Article styles */
-article header .article-image {
-    text-align: center;
+figure {
+    margin: 0 0 1rem;
 }
 
-article header .article-image img,
-img.content-image {
+figure img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 1rem;
+}
+
+.heading-anchor {
+    color: var(--subtext0);
+    text-decoration: none;
+    opacity: 0;
+}
+
+:is(h1, h2, h3, h4, h5, h6):hover .heading-anchor,
+.heading-anchor:focus-visible {
+    opacity: 1;
 }
 
 article header h1 {

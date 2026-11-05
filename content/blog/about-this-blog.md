@@ -6,6 +6,7 @@ tags: ["meta", "hugo", "blog"]
 draft: false
 images:
   - src: /img/blog/willow.webp
+    alt: "Willow branches with long, narrow green leaves against a clear blue sky"
     caption: "a picture of a Willow tree I took at a local café"
 ---
 

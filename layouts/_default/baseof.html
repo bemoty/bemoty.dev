@@ -42,8 +42,10 @@
     {{ if .Params.images }}
         {{ range first 1 .Params.images }}
             {{ if reflect.IsMap . }}
-                <meta property="og:image" content="{{ .src | absURL }}">
-                <meta property="twitter:image" content="{{ .src | absURL }}">
+                {{ $url := .src | absURL }}
+                {{ with partial "resolve-image.html" (dict "page" $ "src" .src) }}{{ $url = .Permalink }}{{ end }}
+                <meta property="og:image" content="{{ $url }}">
+                <meta property="twitter:image" content="{{ $url }}">
                 {{ with .alt }}<meta property="og:image:alt" content="{{ . }}">{{ end }}
             {{ else }}
                 <meta property="og:image" content="{{ . | absURL }}">
@@ -124,7 +126,9 @@
       {{ with .Description }}"description": "{{ . }}",{{ end }}
       {{ with .Params.images }}
         {{ with index . 0 }}
-      "image": "{{ .src | absURL }}",
+          {{ $url := .src | absURL }}
+          {{ with partial "resolve-image.html" (dict "page" $ "src" .src) }}{{ $url = .Permalink }}{{ end }}
+      "image": "{{ $url }}",
         {{ end }}
       {{ end }}
       "publisher": {

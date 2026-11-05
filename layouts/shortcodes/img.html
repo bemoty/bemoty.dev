@@ -1,16 +1,1 @@
-{{ $src := .Get "src" }}
-{{ $img := resources.Get (strings.TrimPrefix "/" $src) }}
-{{ if $img }}
-<img src="{{ $img.RelPermalink }}"
-     alt="{{ .Get "alt" }}"
-     width="{{ $img.Width }}"
-     height="{{ $img.Height }}"
-     loading="lazy"
-     class="content-image"/>
-{{ else }}
-<img src="{{ $src }}"
-     alt="{{ .Get "alt" }}"
-     loading="lazy"
-     class="content-image"/>
-{{ end }}
-{{ with .Get "caption" }}<p class="muted">— {{ . }}</p>{{ end }}
+{{ partial "figure.html" (dict "page" .Page "src" (.Get "src") "alt" (.Get "alt") "caption" (.Get "caption")) }}

@@ -8,6 +8,7 @@
         {{ .Date.Format "2006-01-02" }}
         <a href="{{ .RelPermalink }}">{{.Title }}</a>
       </div>
+      {{ with .Description }}<p class="muted">{{ . }}</p>{{ end }}
     </li>
     {{ end }}
   </ul>

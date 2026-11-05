@@ -1,0 +1,6 @@
+<figure>
+  {{ partial "image.html" . }}
+  {{- with .caption }}
+  <figcaption class="muted">— {{ . }}</figcaption>
+  {{- end }}
+</figure>

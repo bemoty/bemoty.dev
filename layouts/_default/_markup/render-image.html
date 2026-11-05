@@ -1,0 +1,2 @@
+{{- $args := dict "page" .Page "src" .Destination "alt" .PlainText "caption" .Title }}
+{{- if .IsBlock }}{{ partial "figure.html" $args }}{{ else }}{{ partial "image.html" $args }}{{ end -}}

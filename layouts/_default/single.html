@@ -4,27 +4,7 @@
             <header>
                 {{ with .Params.images }}
                     {{ with index . 0 }}
-                        {{ $imgPath := .src }}
-                        {{ $img := resources.Get (strings.TrimPrefix "/" $imgPath) }}
-                        {{ if $img }}
-                            <div class="article-image">
-                                <img src="{{ $img.RelPermalink }}"
-                                     alt="{{ .caption | default .src }}"
-                                     width="{{ $img.Width }}"
-                                     height="{{ $img.Height }}"
-                                     loading="lazy"/>
-                            </div>
-                            {{ with .caption }}
-                                <p class="muted">— {{ . }}</p>
-                            {{ end }}
-                        {{ else }}
-                            <div class="article-image">
-                                <img src="{{ .src }}" alt="{{ .caption | default .src }}" loading="lazy"/>
-                            </div>
-                            {{ with .caption }}
-                                <p class="muted">— {{ . }}</p>
-                            {{ end }}
-                        {{ end }}
+                        {{ partial "figure.html" (dict "page" $ "src" .src "alt" .alt "caption" .caption "eager" true) }}
                     {{ end }}
                 {{ end }}
 
@@ -36,6 +16,7 @@
                             {{ .Page.Date.Format "2006-01-02" }}
                         </time>
                     {{ end }}
+                    {{ if eq .Type "blog" }}<span class="posted">{{ .ReadingTime }} min read</span>{{ end }}
 
                     {{ with .Params.tags }}
                         <div class="article-tags">

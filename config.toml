@@ -18,6 +18,8 @@ noClasses = false
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
 
 [sitemap]
 changefreq = "monthly"
