@@ -2,6 +2,7 @@ baseURL = 'https://bemoty.dev/'
 locale = 'en-us'
 title = "bemoty | Joshua Winkler"
 enableRobotsTXT = true
+enableGitInfo = true
 
 [taxonomies]
 tag = "tags"

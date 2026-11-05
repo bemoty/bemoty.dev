@@ -112,9 +112,14 @@
       "headline": "{{ .Title }}",
       "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
       {{ with .Lastmod }}"dateModified": "{{ .Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+      },
       "author": {
         "@type": "Person",
-        "name": "{{ .Site.Params.author }}"
+        "name": "{{ .Site.Params.author }}",
+        "url": "{{ site.Home.Permalink }}"
       },
       {{ with .Description }}"description": "{{ . }}",{{ end }}
       {{ with .Params.images }}
