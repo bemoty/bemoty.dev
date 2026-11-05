@@ -84,6 +84,8 @@
 	<link rel="stylesheet" href="{{ $fontCss.RelPermalink }}" integrity="{{ $fontCss.Data.Integrity }}">
 	{{ $mainCss := resources.Get "style/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCss.RelPermalink }}" integrity="{{ $mainCss.Data.Integrity }}">
+	{{ $chromaCss := resources.Get "style/chroma.css" | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $chromaCss.RelPermalink }}" integrity="{{ $chromaCss.Data.Integrity }}">
 
     {{ if .IsHome }}
     <script type="application/ld+json">

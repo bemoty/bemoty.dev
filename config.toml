@@ -11,6 +11,9 @@ author = "Joshua Winkler"
 description = "I am a software engineer based in Innsbruck, Austria."
 
 [markup]
+[markup.highlight]
+noClasses = false
+
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
