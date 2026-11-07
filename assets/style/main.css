@@ -366,6 +366,101 @@ article header .article-meta .article-tags .tag:hover {
     color: var(--rosewater);
 }
 
+.toc {
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin-block: 0 1.5rem;
+}
+
+.toc summary {
+    color: var(--subtext0);
+    cursor: pointer;
+    width: fit-content;
+}
+
+.toc summary:hover {
+    color: var(--text);
+}
+
+.toc summary:focus-visible {
+    outline: 2px solid var(--rosewater);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.toc ul {
+    list-style: none;
+    margin: 0;
+    padding-inline-start: 1.25em;
+}
+
+.toc details > ul {
+    scroll-target-group: auto;
+    margin-block-start: 0.5em;
+    padding-inline-start: 1em;
+    border-inline-start: 1px solid var(--mantle);
+}
+
+.toc li {
+    margin-block: 0.25em;
+    overflow-wrap: anywhere;
+}
+
+.toc a {
+    color: var(--subtext0);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    color: var(--text);
+    text-decoration: underline var(--rosewater-light) solid 1px;
+}
+
+.toc a:target-current {
+    color: var(--rosewater);
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 71rem) {
+    .wrapper:has(.toc) {
+        --column: min(75ch, 100% - 2rem);
+        margin-inline: max(1rem, min((100% - var(--column)) / 2, 100% - var(--column) - 19rem)) 0;
+    }
+
+    article:has(> .toc) {
+        position: relative;
+    }
+
+    .toc {
+        position: absolute;
+        inset-block: 0;
+        left: calc(100% + 3rem);
+        width: 15rem;
+        margin: 0;
+    }
+
+    .toc details {
+        position: sticky;
+        top: 2rem;
+        max-height: calc(100vh - 4rem);
+        overflow-y: auto;
+    }
+
+    .toc details::details-content {
+        content-visibility: visible;
+        display: block;
+    }
+
+    .toc summary {
+        list-style: none;
+        pointer-events: none;
+    }
+
+    .toc summary::-webkit-details-marker {
+        display: none;
+    }
+}
+
 footer {
     line-height: 1.3;
     margin-top: 4rem;

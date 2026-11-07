@@ -15,6 +15,11 @@ description = "I am a software engineer based in Innsbruck, Austria."
 [markup.highlight]
 noClasses = false
 
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+ordered = false
+
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
