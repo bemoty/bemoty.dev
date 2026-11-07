@@ -1,4 +1,5 @@
 :root {
+    color-scheme: light dark;
     --rosewater: #f5e0dc;
     --rosewater-light: #f5e0dc9f;
     --text: #cccccc;
@@ -8,6 +9,22 @@
     --mantle: #1f1f1f;
     --crust: #090909;
     --code: #272822;
+    --icon: #ffffff;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --rosewater: #9a4a3c;
+        --rosewater-light: #9a4a3c9f;
+        --text: #2b2827;
+        --subtext0: #56555c;
+        --overlay0: #45403f;
+        --base: #faf8f7;
+        --mantle: #e6e1de;
+        --crust: #f2eeec;
+        --code: #efebe8;
+        --icon: #2b2827;
+    }
 }
 
 body {
@@ -133,6 +150,10 @@ pre {
     font-size: 1rem;
 }
 
+pre.chroma {
+    background-color: var(--code);
+}
+
 body > .wrapper > header {
     padding: 0 2rem;
 }
@@ -171,8 +192,10 @@ header .links {
     justify-content: center;
 }
 
-header .links img {
+header .links svg {
     height: 1.3rem;
+    width: auto;
+    color: var(--icon);
 }
 
 header .nav {
