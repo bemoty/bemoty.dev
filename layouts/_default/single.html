@@ -11,6 +11,7 @@
                 <h1>{{ .Title }}</h1>
 
                 <div class="article-meta">
+                    {{ if eq .Type "blog" }}<span class="posted byline">by <a rel="author" href="{{ "" | relURL }}">{{ .Site.Params.author }}</a></span>{{ end }}
                     {{ if .Page.Date }}
                         <time datetime="{{ .Page.Date.Format "2006-01-02" }}" class="posted">
                             {{ .Page.Date.Format "2006-01-02" }}

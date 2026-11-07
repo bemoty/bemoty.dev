@@ -349,6 +349,16 @@ article header .article-meta {
 
 article header .article-meta .posted {
     margin-right: 15px;
+    white-space: nowrap;
+}
+
+article header .article-meta .byline a {
+    color: inherit;
+    text-decoration: none;
+}
+
+article header .article-meta .byline a:hover {
+    color: var(--rosewater);
 }
 
 article header .article-meta .article-tags {

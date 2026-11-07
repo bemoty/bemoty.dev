@@ -6,7 +6,7 @@
 {{- end -}}
 {{- $minHeadings := cond (eq .Params.toc true) 1 3 -}}
 {{- if and (ne .Params.toc false) (ge $headingCount $minHeadings) -}}
-    <nav class="toc" aria-labelledby="toc-title">
+    <nav class="toc" role="navigation" aria-labelledby="toc-title">
         <details>
             <summary id="toc-title">Contents</summary>
             {{ .TableOfContents | replaceRE `</?nav[^>]*>` "" | safeHTML }}
