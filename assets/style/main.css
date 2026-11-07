@@ -709,6 +709,7 @@ footer .source-link {
 
     header .bar a {
         margin: 0 0 0.25rem;
+        text-align: center;
     }
 
     header .bar a .name {
