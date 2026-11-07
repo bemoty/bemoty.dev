@@ -748,3 +748,116 @@ footer .source-link {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+@media print {
+    @page {
+        margin: 2cm;
+    }
+
+    :root {
+        color-scheme: light;
+        --rosewater: #000000;
+        --rosewater-light: #000000;
+        --text: #000000;
+        --subtext0: #444444;
+        --overlay0: #333333;
+        --base: #ffffff;
+        --mantle: #bbbbbb;
+        --crust: #ffffff;
+        --code: #eeeeee;
+        --icon: #000000;
+        font-size: 11pt;
+    }
+
+    body {
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+
+    body > .wrapper > header,
+    footer,
+    .skip-link,
+    .toc,
+    .heading-anchor {
+        display: none;
+    }
+
+    .wrapper {
+        max-width: none;
+        margin: 0;
+    }
+
+    .page {
+        margin-block: 0;
+    }
+
+    a {
+        color: var(--text);
+        text-decoration: underline 1px;
+    }
+
+    .page a[href^="http"]:not(article > header a, .footnote-ref, .footnote-backref, .heading-anchor)::after {
+        content: " (" attr(href) ")";
+        font-size: 0.85em;
+        word-break: break-all;
+    }
+
+    article header figure img {
+        max-height: 8cm;
+        width: auto;
+    }
+
+    pre,
+    pre.chroma {
+        font-size: 0.9em;
+        background: none;
+        border: 1px solid var(--mantle);
+        white-space: pre-wrap;
+        text-wrap: wrap;
+        overflow: visible;
+        overflow-wrap: anywhere;
+    }
+
+    :not(pre) > code {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .table-wrapper {
+        overflow: visible;
+    }
+
+    .table-wrapper th {
+        white-space: normal;
+    }
+
+    .page details:not(.toc details)::details-content {
+        content-visibility: visible;
+        display: block;
+        margin-block-start: 0.5em;
+        padding-inline-start: 1em;
+        border-inline-start: 2px solid var(--mantle);
+    }
+
+    .page details:not(.toc details) > summary {
+        list-style: none;
+        font-weight: bold;
+    }
+
+    .page details:not(.toc details) > summary::-webkit-details-marker {
+        display: none;
+    }
+
+    h1, h2, h3, h4, .heading {
+        break-after: avoid;
+    }
+
+    figure, blockquote, img, tr {
+        break-inside: avoid;
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}

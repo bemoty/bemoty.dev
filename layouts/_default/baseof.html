@@ -69,9 +69,9 @@
 	{{ $mainCss := resources.Get "style/main.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $mainCss.RelPermalink }}" integrity="{{ $mainCss.Data.Integrity }}">
 	{{ $chromaCss := resources.Get "style/chroma.css" | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $chromaCss.RelPermalink }}" integrity="{{ $chromaCss.Data.Integrity }}" media="not all and (prefers-color-scheme: light)">
+	<link rel="stylesheet" href="{{ $chromaCss.RelPermalink }}" integrity="{{ $chromaCss.Data.Integrity }}" media="screen and (not (prefers-color-scheme: light))">
 	{{ $chromaLightCss := resources.Get "style/chroma-light.css" | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $chromaLightCss.RelPermalink }}" integrity="{{ $chromaLightCss.Data.Integrity }}" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="{{ $chromaLightCss.RelPermalink }}" integrity="{{ $chromaLightCss.Data.Integrity }}" media="print, (prefers-color-scheme: light)">
 
     {{ if .IsHome }}
     <script type="application/ld+json">
