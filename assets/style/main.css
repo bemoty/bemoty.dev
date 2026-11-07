@@ -192,10 +192,155 @@ pre {
     overflow-x: auto;
     overflow-wrap: normal;
     font-size: 1rem;
+    tab-size: 4;
+    background-color: var(--code);
 }
 
 pre.chroma {
     background-color: var(--code);
+}
+
+kbd {
+    font-size: 0.85em;
+    line-height: 1;
+    padding: 0.1em 0.4em;
+    background-color: var(--code);
+    border: 1px solid color-mix(in srgb, var(--subtext0) 45%, transparent);
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+:not(pre) > samp {
+    color: var(--subtext0);
+    font-size: 0.9em;
+    line-height: 1;
+    padding: 0.1em 0.35em;
+    border: 1px dashed color-mix(in srgb, var(--subtext0) 45%, transparent);
+    border-radius: 3px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-block: 1.5em;
+    font-size: 0.9em;
+}
+
+.table-wrapper:focus-visible {
+    outline: 2px solid var(--rosewater);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.table-wrapper table {
+    min-width: 100%;
+    border-collapse: collapse;
+}
+
+.table-wrapper :is(th, td) {
+    padding: 0.5em 0.75em;
+    text-align: start;
+    vertical-align: top;
+    border-bottom: 1px solid var(--mantle);
+}
+
+.table-wrapper :is(th, td):first-child {
+    padding-inline-start: 0;
+}
+
+.table-wrapper :is(th, td):last-child {
+    padding-inline-end: 0;
+}
+
+.table-wrapper th {
+    white-space: nowrap;
+    vertical-align: bottom;
+    border-bottom: 2px solid var(--subtext0);
+}
+
+.table-wrapper tbody tr:last-child > td {
+    border-bottom: 0;
+}
+
+.table-wrapper .align-center {
+    text-align: center;
+}
+
+.table-wrapper .align-right {
+    text-align: end;
+    font-variant-numeric: tabular-nums;
+}
+
+.page details:not(.toc details) {
+    margin-block: 1em;
+}
+
+.page details:not(.toc details) > summary {
+    width: fit-content;
+    cursor: pointer;
+}
+
+.page details:not(.toc details) > summary:hover {
+    color: var(--rosewater);
+}
+
+.page details:not(.toc details) > summary:focus-visible {
+    outline: 2px solid var(--rosewater);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.page details:not(.toc details)[open]::details-content {
+    margin-block-start: 0.5em;
+    padding-inline-start: 1em;
+    border-inline-start: 2px solid var(--mantle);
+}
+
+.page details:not(.toc details) > summary + * {
+    margin-block-start: 0;
+}
+
+.page details:not(.toc details) > :last-child {
+    margin-block-end: 0;
+}
+
+.footnotes {
+    margin-block-start: 3rem;
+    font-size: 0.9em;
+    color: var(--subtext0);
+}
+
+.footnotes hr {
+    margin-block: 0 1.5em;
+    border: 0;
+    border-top: 1px solid var(--mantle);
+}
+
+.footnotes ol {
+    padding-inline-start: 2em;
+}
+
+.footnotes li + li {
+    margin-block-start: 0.75em;
+}
+
+.footnotes li p {
+    margin-block: 0 0.5em;
+}
+
+.footnotes li p:last-child {
+    margin-block-end: 0;
+}
+
+.footnote-ref,
+.footnote-backref {
+    text-decoration: none;
+}
+
+.footnote-ref {
+    padding-inline: 0.15em;
 }
 
 body > .wrapper > header {
@@ -550,6 +695,10 @@ footer .source-link {
 
     .page {
         margin-block: 2rem;
+    }
+
+    .table-wrapper td {
+        min-width: 12ch;
     }
 
     header .bar {
