@@ -11,7 +11,11 @@
 }
 
 body {
-    font-family: "JetBrainsMono-Regular", monospace;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-synthesis: none;
+    font-kerning: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background-color: var(--base);
     color: var(--text);
     margin: 0;
@@ -105,7 +109,8 @@ header .links a:focus-visible {
     font-size: 0.85em;
 }
 
-code {
+code, kbd, samp {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -120,6 +125,7 @@ code {
 }
 
 pre {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
     padding: 0.8rem;
     text-wrap: nowrap;
     border-radius: 0.5rem;
