@@ -1,1 +1,1 @@
-<h{{ .Level }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>{{ .Text }} <a class="heading-anchor" href="#{{ .Anchor }}" aria-label="Link to {{ .PlainText }}">#</a></h{{ .Level }}>
+<div class="heading"><h{{ .Level }} id="{{ .Anchor }}"{{ range $k, $v := .Attributes }}{{ if ne $k "id" }}{{ printf " %s=%q" $k (string $v) | safeHTMLAttr }}{{ end }}{{ end }}>{{ .Text }}</h{{ .Level }}><a class="heading-anchor" href="#{{ .Anchor }}"><span class="visually-hidden">Section titled {{ .PlainText }}</span><span aria-hidden="true">#</span></a></div>
