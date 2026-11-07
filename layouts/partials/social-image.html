@@ -1,0 +1,39 @@
+{{- $page := . }}
+{{- $url := "" }}
+{{- $alt := "" }}
+{{- $card := false }}
+{{- with .Params.images }}
+  {{- $first := index . 0 }}
+  {{- if reflect.IsMap $first }}
+    {{- $url = $first.src | absURL }}
+    {{- $alt = $first.alt }}
+    {{- $source := or ($page.Resources.Get $first.src) (resources.Get (strings.TrimPrefix "/" $first.src)) }}
+    {{- with $source }}
+      {{- if and (eq .MediaType.MainType "image") (ne .MediaType.SubType "svg") }}
+        {{- $card = .Fill "1200x630 Center jpg q85" }}
+      {{- else }}
+        {{- $url = .Permalink }}
+      {{- end }}
+    {{- end }}
+  {{- else }}
+    {{- $url = $first | absURL }}
+  {{- end }}
+{{- else with site.Params.images }}
+  {{- $url = index . 0 | absURL }}
+{{- else }}
+  {{- $url = "/img/social-card.webp" | absURL }}
+{{- end }}
+{{- with $card }}
+<meta property="og:image" content="{{ .Permalink }}">
+<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">
+<meta property="og:image:type" content="{{ .MediaType.Type }}">
+<meta name="twitter:image" content="{{ .Permalink }}">
+{{- else }}
+<meta property="og:image" content="{{ $url }}">
+<meta name="twitter:image" content="{{ $url }}">
+{{- end }}
+{{- with $alt }}
+<meta property="og:image:alt" content="{{ . }}">
+<meta name="twitter:image:alt" content="{{ . }}">
+{{- end }}

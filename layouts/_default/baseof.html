@@ -40,26 +40,7 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    {{ if .Params.images }}
-        {{ range first 1 .Params.images }}
-            {{ if reflect.IsMap . }}
-                {{ $url := .src | absURL }}
-                {{ with partial "resolve-image.html" (dict "page" $ "src" .src) }}{{ $url = .Permalink }}{{ end }}
-                <meta property="og:image" content="{{ $url }}">
-                <meta property="twitter:image" content="{{ $url }}">
-                {{ with .alt }}<meta property="og:image:alt" content="{{ . }}">{{ end }}
-            {{ else }}
-                <meta property="og:image" content="{{ . | absURL }}">
-                <meta property="twitter:image" content="{{ . | absURL }}">
-            {{ end }}
-        {{ end }}
-    {{ else if .Site.Params.images }}
-        <meta property="og:image" content="{{ index .Site.Params.images 0 | absURL }}">
-        <meta property="twitter:image" content="{{ index .Site.Params.images 0 | absURL }}">
-    {{ else }}
-        <meta property="og:image" content="{{ "/img/social-card.webp" | absURL }}">
-        <meta property="twitter:image" content="{{ "/img/social-card.webp" | absURL }}">
-    {{ end }}
+    {{ partial "social-image.html" . }}
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ .Title }}">
